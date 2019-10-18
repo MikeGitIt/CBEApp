@@ -1,0 +1,645 @@
+DEBUG 2019-10-18 04:30:35,574 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2019-10-18 04:30:35,771 [1    ] Abp.Modules.AbpModuleManager             - Found 17 ABP modules in total.
+DEBUG 2019-10-18 04:30:35,818 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: CBEApp.Web.CBEAppWebModule, CBEApp.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-10-18 04:30:35,826 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: CBEApp.CBEAppDataModule, CBEApp.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-10-18 04:30:35,826 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=4.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-10-18 04:30:35,834 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=4.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-10-18 04:30:35,834 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=4.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-10-18 04:30:35,834 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=4.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-10-18 04:30:35,835 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=4.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-10-18 04:30:35,835 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=4.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-10-18 04:30:35,836 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: CBEApp.CBEAppCoreModule, CBEApp.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-10-18 04:30:35,836 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: CBEApp.CBEAppApplicationModule, CBEApp.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-10-18 04:30:35,837 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=4.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-10-18 04:30:35,837 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: CBEApp.Api.CBEAppWebApiModule, CBEApp.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-10-18 04:30:35,838 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=4.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-10-18 04:30:35,838 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=4.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-10-18 04:30:35,838 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=4.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-10-18 04:30:35,839 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.SignalR.AbpWebSignalRModule, Abp.Web.SignalR, Version=4.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-10-18 04:30:35,839 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=4.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-10-18 04:30:35,887 [1    ] Abp.Modules.AbpModuleManager             - 17 modules loaded.
+DEBUG 2019-10-18 04:30:39,308 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-10-18 04:30:39,309 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-10-18 04:30:39,309 [1    ] o.Configuration.LanguageManagementConfig - Converted CBEApp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-10-18 04:30:39,309 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-10-18 04:30:42,349 [1    ] EntityFramework.AbpEntityFrameworkModule - Registering DbContext: CBEApp.EntityFramework.CBEAppDbContext, CBEApp.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-10-18 04:31:12,667 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2019-10-18 04:31:13,122 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2019-10-18 04:31:13,205 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2019-10-18 04:31:13,270 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: CBEApp
+DEBUG 2019-10-18 04:31:13,813 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2019-10-18 04:31:15,984 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Castle.Proxies.BackgroundJobManagerProxy
+DEBUG 2019-10-18 04:31:16,537 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 11 classes define auto mapping attributes
+DEBUG 2019-10-18 04:31:16,538 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CBEApp.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2019-10-18 04:31:16,577 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CBEApp.Sessions.Dto.UserLoginInfoDto
+DEBUG 2019-10-18 04:31:16,578 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CBEApp.Users.Dto.CreateUserDto
+DEBUG 2019-10-18 04:31:16,579 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CBEApp.Users.Dto.UpdateUserDto
+DEBUG 2019-10-18 04:31:16,580 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CBEApp.Users.Dto.UserDto
+DEBUG 2019-10-18 04:31:16,580 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CBEApp.Roles.Dto.PermissionDto
+DEBUG 2019-10-18 04:31:16,580 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CBEApp.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2019-10-18 04:31:16,581 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CBEApp.MultiTenancy.Dto.EditTenantDto
+DEBUG 2019-10-18 04:31:16,581 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CBEApp.MultiTenancy.Dto.TenantDto
+DEBUG 2019-10-18 04:31:16,582 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CBEApp.Web.Models.Account.TenantChangeViewModel
+DEBUG 2019-10-18 04:31:16,582 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CBEApp.Web.Models.Account.TenantSelectionViewModel+TenantInfo
+DEBUG 2019-10-18 04:31:48,635 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'CBEApp.Sessions.ISessionAppService' with service name 'app/session'.
+DEBUG 2019-10-18 04:31:48,639 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'CBEApp.Users.IUserAppService' with service name 'app/user'.
+DEBUG 2019-10-18 04:31:48,642 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'CBEApp.Roles.IRoleAppService' with service name 'app/role'.
+DEBUG 2019-10-18 04:31:48,647 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'CBEApp.MultiTenancy.ITenantAppService' with service name 'app/tenant'.
+DEBUG 2019-10-18 04:31:48,653 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'CBEApp.Configuration.IConfigurationAppService' with service name 'app/configuration'.
+DEBUG 2019-10-18 04:31:48,668 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'CBEApp.Authorization.Accounts.IAccountAppService' with service name 'app/account'.
+DEBUG 2019-10-18 04:49:57,965 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2019-10-18 04:49:58,036 [1    ] Abp.Modules.AbpModuleManager             - Found 17 ABP modules in total.
+DEBUG 2019-10-18 04:49:58,070 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: CBEApp.Web.CBEAppWebModule, CBEApp.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-10-18 04:49:58,078 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: CBEApp.CBEAppDataModule, CBEApp.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-10-18 04:49:58,080 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=4.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-10-18 04:49:58,081 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=4.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-10-18 04:49:58,084 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=4.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-10-18 04:49:58,085 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=4.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-10-18 04:49:58,089 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=4.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-10-18 04:49:58,090 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=4.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-10-18 04:49:58,093 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: CBEApp.CBEAppCoreModule, CBEApp.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-10-18 04:49:58,096 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: CBEApp.CBEAppApplicationModule, CBEApp.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-10-18 04:49:58,099 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=4.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-10-18 04:49:58,101 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: CBEApp.Api.CBEAppWebApiModule, CBEApp.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-10-18 04:49:58,103 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=4.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-10-18 04:49:58,113 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=4.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-10-18 04:49:58,116 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=4.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-10-18 04:49:58,121 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.SignalR.AbpWebSignalRModule, Abp.Web.SignalR, Version=4.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-10-18 04:49:58,123 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=4.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-10-18 04:49:58,158 [1    ] Abp.Modules.AbpModuleManager             - 17 modules loaded.
+DEBUG 2019-10-18 04:50:00,100 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-10-18 04:50:00,101 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-10-18 04:50:00,101 [1    ] o.Configuration.LanguageManagementConfig - Converted CBEApp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-10-18 04:50:00,101 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-10-18 04:50:03,333 [1    ] EntityFramework.AbpEntityFrameworkModule - Registering DbContext: CBEApp.EntityFramework.CBEAppDbContext, CBEApp.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-10-18 04:50:38,335 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2019-10-18 04:50:38,736 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2019-10-18 04:50:38,988 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2019-10-18 04:50:39,016 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: CBEApp
+DEBUG 2019-10-18 04:50:39,159 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2019-10-18 04:50:41,113 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Castle.Proxies.BackgroundJobManagerProxy
+DEBUG 2019-10-18 04:50:41,701 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 11 classes define auto mapping attributes
+DEBUG 2019-10-18 04:50:41,701 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CBEApp.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2019-10-18 04:50:41,740 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CBEApp.Sessions.Dto.UserLoginInfoDto
+DEBUG 2019-10-18 04:50:41,743 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CBEApp.Users.Dto.CreateUserDto
+DEBUG 2019-10-18 04:50:41,744 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CBEApp.Users.Dto.UpdateUserDto
+DEBUG 2019-10-18 04:50:41,745 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CBEApp.Users.Dto.UserDto
+DEBUG 2019-10-18 04:50:41,745 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CBEApp.Roles.Dto.PermissionDto
+DEBUG 2019-10-18 04:50:41,745 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CBEApp.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2019-10-18 04:50:41,746 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CBEApp.MultiTenancy.Dto.EditTenantDto
+DEBUG 2019-10-18 04:50:41,746 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CBEApp.MultiTenancy.Dto.TenantDto
+DEBUG 2019-10-18 04:50:41,746 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CBEApp.Web.Models.Account.TenantChangeViewModel
+DEBUG 2019-10-18 04:50:41,747 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CBEApp.Web.Models.Account.TenantSelectionViewModel+TenantInfo
+DEBUG 2019-10-18 04:52:10,021 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'CBEApp.Sessions.ISessionAppService' with service name 'app/session'.
+DEBUG 2019-10-18 04:52:10,124 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'CBEApp.Users.IUserAppService' with service name 'app/user'.
+DEBUG 2019-10-18 04:52:10,128 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'CBEApp.Roles.IRoleAppService' with service name 'app/role'.
+DEBUG 2019-10-18 04:52:10,135 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'CBEApp.MultiTenancy.ITenantAppService' with service name 'app/tenant'.
+DEBUG 2019-10-18 04:52:10,160 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'CBEApp.Configuration.IConfigurationAppService' with service name 'app/configuration'.
+DEBUG 2019-10-18 04:52:10,162 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'CBEApp.Authorization.Accounts.IAccountAppService' with service name 'app/account'.
+WARN  2019-10-18 04:52:39,482 [6    ] Abp.Logging.LogHelper                    - Abp.Authorization.AbpAuthorizationException: Current user did not login to the application!
+   at Abp.Authorization.AuthorizationHelper.<AuthorizeAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Abp.Authorization.AuthorizationHelper.<CheckPermissions>d__18.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Abp.Authorization.AuthorizationHelper.<AuthorizeAsync>d__16.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException(Task task)
+   at Nito.AsyncEx.AsyncContext.<>c__DisplayClass15_0.<Run>b__0(Task t)
+   at System.Threading.Tasks.ContinuationTaskFromTask.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException(Task task)
+   at Nito.AsyncEx.AsyncContext.Run(Func`1 action)
+   at Abp.Authorization.AuthorizationHelperExtensions.Authorize(IAuthorizationHelper authorizationHelper, MethodInfo methodInfo, Type type)
+   at Abp.Web.Mvc.Authorization.AbpMvcAuthorizeFilter.OnAuthorization(AuthorizationContext filterContext)
+Abp.Authorization.AbpAuthorizationException: Current user did not login to the application!
+   at Abp.Authorization.AuthorizationHelper.<AuthorizeAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Abp.Authorization.AuthorizationHelper.<CheckPermissions>d__18.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Abp.Authorization.AuthorizationHelper.<AuthorizeAsync>d__16.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException(Task task)
+   at Nito.AsyncEx.AsyncContext.<>c__DisplayClass15_0.<Run>b__0(Task t)
+   at System.Threading.Tasks.ContinuationTaskFromTask.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException(Task task)
+   at Nito.AsyncEx.AsyncContext.Run(Func`1 action)
+   at Abp.Authorization.AuthorizationHelperExtensions.Authorize(IAuthorizationHelper authorizationHelper, MethodInfo methodInfo, Type type)
+   at Abp.Web.Mvc.Authorization.AbpMvcAuthorizeFilter.OnAuthorization(AuthorizationContext filterContext)
+WARN  2019-10-18 05:04:04,902 [17   ] nHandling.AbpApiExceptionFilterAttribute - Login failed!
+Abp.UI.UserFriendlyException: Login failed!
+   at CBEApp.Api.Controllers.AccountController.<GetLoginResultAsync>d__8.MoveNext() in C:\Development\CBEApp\src\CBEApp.WebApi\Api\Controllers\AccountController.cs:line 66
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at CBEApp.Api.Controllers.AccountController.<Authenticate>d__7.MoveNext() in C:\Development\CBEApp\src\CBEApp.WebApi\Api\Controllers\AccountController.cs:line 42
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Threading.Tasks.TaskHelpersExtensions.<CastToObject>d__1`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Abp.WebApi.Uow.AbpApiUowFilter.<ExecuteActionFilterAsync>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Abp.WebApi.Validation.AbpApiValidationFilter.<ExecuteActionFilterAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Abp.WebApi.Auditing.AbpApiAuditFilter.<ExecuteActionFilterAsync>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Abp.WebApi.Auditing.AbpApiAuditFilter.<ExecuteActionFilterAsync>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Abp.WebApi.Security.AntiForgery.AbpAntiForgeryApiFilter.<ExecuteAuthorizationFilterAsync>d__10.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Abp.WebApi.Authorization.AbpApiAuthorizeFilter.<ExecuteAuthorizationFilterAsync>d__7.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.AuthenticationFilterResult.<ExecuteAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__6.MoveNext()
+WARN  2019-10-18 05:04:47,273 [7    ] nHandling.AbpApiExceptionFilterAttribute - Login failed!
+Abp.UI.UserFriendlyException: Login failed!
+   at CBEApp.Api.Controllers.AccountController.<GetLoginResultAsync>d__8.MoveNext() in C:\Development\CBEApp\src\CBEApp.WebApi\Api\Controllers\AccountController.cs:line 66
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at CBEApp.Api.Controllers.AccountController.<Authenticate>d__7.MoveNext() in C:\Development\CBEApp\src\CBEApp.WebApi\Api\Controllers\AccountController.cs:line 42
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Threading.Tasks.TaskHelpersExtensions.<CastToObject>d__1`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Abp.WebApi.Uow.AbpApiUowFilter.<ExecuteActionFilterAsync>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Abp.WebApi.Validation.AbpApiValidationFilter.<ExecuteActionFilterAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Abp.WebApi.Auditing.AbpApiAuditFilter.<ExecuteActionFilterAsync>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Abp.WebApi.Auditing.AbpApiAuditFilter.<ExecuteActionFilterAsync>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Abp.WebApi.Security.AntiForgery.AbpAntiForgeryApiFilter.<ExecuteAuthorizationFilterAsync>d__10.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Abp.WebApi.Authorization.AbpApiAuthorizeFilter.<ExecuteAuthorizationFilterAsync>d__7.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.AuthenticationFilterResult.<ExecuteAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__6.MoveNext()
+DEBUG 2019-10-18 05:11:07,266 [15   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"08442659-f2a8-4e8b-a1e6-c7c4392ed51c","IpAddress":"10.0.75.1","TenantId":null,"UserId":1,"ConnectTime":"2019-10-18T05:11:02.354189-04:00","Properties":{}}
+DEBUG 2019-10-18 05:11:07,445 [20   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 08442659-f2a8-4e8b-a1e6-c7c4392ed51c
+DEBUG 2019-10-18 05:11:20,799 [16   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 08442659-f2a8-4e8b-a1e6-c7c4392ed51c
+DEBUG 2019-10-18 05:11:24,128 [16   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"67f34872-7ff4-4740-a21f-4baacce50f10","IpAddress":"10.0.75.1","TenantId":null,"UserId":1,"ConnectTime":"2019-10-18T05:11:24.1270806-04:00","Properties":{}}
+DEBUG 2019-10-18 05:11:24,152 [15   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 67f34872-7ff4-4740-a21f-4baacce50f10
+DEBUG 2019-10-18 05:11:57,811 [8    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"a6a5630c-b974-4fb1-bbed-aacbb90df73e","IpAddress":"10.0.75.1","TenantId":null,"UserId":1,"ConnectTime":"2019-10-18T05:11:57.81156-04:00","Properties":{}}
+DEBUG 2019-10-18 05:11:57,843 [17   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: a6a5630c-b974-4fb1-bbed-aacbb90df73e
+DEBUG 2019-10-18 05:12:23,310 [7    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 67f34872-7ff4-4740-a21f-4baacce50f10
+WARN  2019-10-18 05:13:08,792 [15   ] nHandling.AbpApiExceptionFilterAttribute - Role name Admin is already taken.
+Abp.UI.UserFriendlyException: Role name Admin is already taken.
+   at Abp.IdentityFramework.IdentityResultExtensions.CheckErrors(IdentityResult identityResult, ILocalizationManager localizationManager)
+   at CBEApp.Roles.RoleAppService.CheckErrors(IdentityResult identityResult) in C:\Development\CBEApp\src\CBEApp.Application\Roles\RoleAppService.cs:line 142
+   at Castle.Proxies.RoleAppServiceProxy.CheckErrors_callback(IdentityResult identityResult)
+   at Castle.Proxies.Invocations.RoleAppService_CheckErrors.InvokeMethodOnTarget()
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Abp.Authorization.AuthorizationInterceptor.Intercept(IInvocation invocation)
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Abp.Domain.Uow.UnitOfWorkInterceptor.PerformSyncUow(IInvocation invocation, UnitOfWorkOptions options)
+   at Abp.Domain.Uow.UnitOfWorkInterceptor.PerformUow(IInvocation invocation, UnitOfWorkOptions options)
+   at Abp.Domain.Uow.UnitOfWorkInterceptor.Intercept(IInvocation invocation)
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Abp.Auditing.AuditingInterceptor.Intercept(IInvocation invocation)
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Abp.Runtime.Validation.Interception.ValidationInterceptor.Intercept(IInvocation invocation)
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Castle.Proxies.RoleAppServiceProxy.CheckErrors(IdentityResult identityResult)
+   at CBEApp.Roles.RoleAppService.<Create>d__6.MoveNext() in C:\Development\CBEApp\src\CBEApp.Application\Roles\RoleAppService.cs:line 50
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Abp.Threading.InternalAsyncHelper.<AwaitTaskWithPostActionAndFinallyAndGetResult>d__5`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Abp.Threading.InternalAsyncHelper.<AwaitTaskWithFinallyAndGetResult>d__3`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Threading.Tasks.TaskHelpersExtensions.<CastToObject>d__1`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Abp.WebApi.Uow.AbpApiUowFilter.<ExecuteActionFilterAsync>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Abp.WebApi.Validation.AbpApiValidationFilter.<ExecuteActionFilterAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Abp.WebApi.Auditing.AbpApiAuditFilter.<ExecuteActionFilterAsync>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Abp.WebApi.Security.AntiForgery.AbpAntiForgeryApiFilter.<ExecuteAuthorizationFilterAsync>d__10.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Abp.WebApi.Authorization.AbpApiAuthorizeFilter.<ExecuteAuthorizationFilterAsync>d__7.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.AuthenticationFilterResult.<ExecuteAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__6.MoveNext()
+DEBUG 2019-10-18 05:13:27,678 [28   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: a6a5630c-b974-4fb1-bbed-aacbb90df73e
+DEBUG 2019-10-18 05:13:29,727 [18   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"849c72d4-239a-4df3-bfb5-2483257f13d4","IpAddress":"10.0.75.1","TenantId":null,"UserId":1,"ConnectTime":"2019-10-18T05:13:29.7279317-04:00","Properties":{}}
+DEBUG 2019-10-18 05:13:29,763 [7    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 849c72d4-239a-4df3-bfb5-2483257f13d4
+DEBUG 2019-10-18 05:15:46,495 [17   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"3296d856-42c3-4d94-8543-18001233b992","IpAddress":"10.0.75.1","TenantId":null,"UserId":1,"ConnectTime":"2019-10-18T05:15:46.4944168-04:00","Properties":{}}
+DEBUG 2019-10-18 05:15:46,601 [28   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 3296d856-42c3-4d94-8543-18001233b992
+WARN  2019-10-18 05:16:06,087 [16   ] Abp.Logging.LogHelper                    - Abp.Authorization.AbpAuthorizationException: Current user did not login to the application!
+   at Abp.Authorization.AuthorizationHelper.<AuthorizeAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Abp.Authorization.AuthorizationHelper.<CheckPermissions>d__18.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Abp.Authorization.AuthorizationHelper.<AuthorizeAsync>d__16.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException(Task task)
+   at Nito.AsyncEx.AsyncContext.<>c__DisplayClass15_0.<Run>b__0(Task t)
+   at System.Threading.Tasks.ContinuationTaskFromTask.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException(Task task)
+   at Nito.AsyncEx.AsyncContext.Run(Func`1 action)
+   at Abp.Authorization.AuthorizationHelperExtensions.Authorize(IAuthorizationHelper authorizationHelper, MethodInfo methodInfo, Type type)
+   at Abp.Web.Mvc.Authorization.AbpMvcAuthorizeFilter.OnAuthorization(AuthorizationContext filterContext)
+Abp.Authorization.AbpAuthorizationException: Current user did not login to the application!
+   at Abp.Authorization.AuthorizationHelper.<AuthorizeAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Abp.Authorization.AuthorizationHelper.<CheckPermissions>d__18.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Abp.Authorization.AuthorizationHelper.<AuthorizeAsync>d__16.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException(Task task)
+   at Nito.AsyncEx.AsyncContext.<>c__DisplayClass15_0.<Run>b__0(Task t)
+   at System.Threading.Tasks.ContinuationTaskFromTask.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException(Task task)
+   at Nito.AsyncEx.AsyncContext.Run(Func`1 action)
+   at Abp.Authorization.AuthorizationHelperExtensions.Authorize(IAuthorizationHelper authorizationHelper, MethodInfo methodInfo, Type type)
+   at Abp.Web.Mvc.Authorization.AbpMvcAuthorizeFilter.OnAuthorization(AuthorizationContext filterContext)
+DEBUG 2019-10-18 05:16:14,774 [16   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 849c72d4-239a-4df3-bfb5-2483257f13d4
+WARN  2019-10-18 05:16:53,715 [26   ] Abp.Logging.LogHelper                    - Abp.Authorization.AbpAuthorizationException: Current user did not login to the application!
+   at Abp.Authorization.AuthorizationHelper.<AuthorizeAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Abp.Authorization.AuthorizationHelper.<CheckPermissions>d__18.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Abp.Authorization.AuthorizationHelper.<AuthorizeAsync>d__16.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException(Task task)
+   at Nito.AsyncEx.AsyncContext.<>c__DisplayClass15_0.<Run>b__0(Task t)
+   at System.Threading.Tasks.ContinuationTaskFromTask.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException(Task task)
+   at Nito.AsyncEx.AsyncContext.Run(Func`1 action)
+   at Abp.Authorization.AuthorizationHelperExtensions.Authorize(IAuthorizationHelper authorizationHelper, MethodInfo methodInfo, Type type)
+   at Abp.Web.Mvc.Authorization.AbpMvcAuthorizeFilter.OnAuthorization(AuthorizationContext filterContext)
+Abp.Authorization.AbpAuthorizationException: Current user did not login to the application!
+   at Abp.Authorization.AuthorizationHelper.<AuthorizeAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Abp.Authorization.AuthorizationHelper.<CheckPermissions>d__18.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Abp.Authorization.AuthorizationHelper.<AuthorizeAsync>d__16.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException(Task task)
+   at Nito.AsyncEx.AsyncContext.<>c__DisplayClass15_0.<Run>b__0(Task t)
+   at System.Threading.Tasks.ContinuationTaskFromTask.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException(Task task)
+   at Nito.AsyncEx.AsyncContext.Run(Func`1 action)
+   at Abp.Authorization.AuthorizationHelperExtensions.Authorize(IAuthorizationHelper authorizationHelper, MethodInfo methodInfo, Type type)
+   at Abp.Web.Mvc.Authorization.AbpMvcAuthorizeFilter.OnAuthorization(AuthorizationContext filterContext)
+WARN  2019-10-18 05:17:22,404 [26   ] Abp.Logging.LogHelper                    - Abp.Authorization.AbpAuthorizationException: Current user did not login to the application!
+   at Abp.Authorization.AuthorizationHelper.<AuthorizeAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Abp.Authorization.AuthorizationHelper.<CheckPermissions>d__18.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Abp.Authorization.AuthorizationHelper.<AuthorizeAsync>d__16.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException(Task task)
+   at Nito.AsyncEx.AsyncContext.<>c__DisplayClass15_0.<Run>b__0(Task t)
+   at System.Threading.Tasks.ContinuationTaskFromTask.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException(Task task)
+   at Nito.AsyncEx.AsyncContext.Run(Func`1 action)
+   at Abp.Authorization.AuthorizationHelperExtensions.Authorize(IAuthorizationHelper authorizationHelper, MethodInfo methodInfo, Type type)
+   at Abp.Web.Mvc.Authorization.AbpMvcAuthorizeFilter.OnAuthorization(AuthorizationContext filterContext)
+Abp.Authorization.AbpAuthorizationException: Current user did not login to the application!
+   at Abp.Authorization.AuthorizationHelper.<AuthorizeAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Abp.Authorization.AuthorizationHelper.<CheckPermissions>d__18.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Abp.Authorization.AuthorizationHelper.<AuthorizeAsync>d__16.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException(Task task)
+   at Nito.AsyncEx.AsyncContext.<>c__DisplayClass15_0.<Run>b__0(Task t)
+   at System.Threading.Tasks.ContinuationTaskFromTask.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException(Task task)
+   at Nito.AsyncEx.AsyncContext.Run(Func`1 action)
+   at Abp.Authorization.AuthorizationHelperExtensions.Authorize(IAuthorizationHelper authorizationHelper, MethodInfo methodInfo, Type type)
+   at Abp.Web.Mvc.Authorization.AbpMvcAuthorizeFilter.OnAuthorization(AuthorizationContext filterContext)
+DEBUG 2019-10-18 05:18:36,350 [32   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"6cc82b16-1e5f-46f9-8db1-d6754747cb51","IpAddress":"10.0.75.1","TenantId":null,"UserId":1,"ConnectTime":"2019-10-18T05:18:36.3500375-04:00","Properties":{}}
+DEBUG 2019-10-18 05:18:36,376 [34   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 6cc82b16-1e5f-46f9-8db1-d6754747cb51
+DEBUG 2019-10-18 05:18:43,821 [33   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"e5dd0ab0-0832-4937-a771-078fbd493a4b","IpAddress":"10.0.75.1","TenantId":null,"UserId":1,"ConnectTime":"2019-10-18T05:18:43.8216811-04:00","Properties":{}}
+DEBUG 2019-10-18 05:18:43,855 [26   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: e5dd0ab0-0832-4937-a771-078fbd493a4b
+DEBUG 2019-10-18 05:19:05,136 [31   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 3296d856-42c3-4d94-8543-18001233b992
+DEBUG 2019-10-18 05:19:15,183 [16   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 6cc82b16-1e5f-46f9-8db1-d6754747cb51
+DEBUG 2019-10-18 05:20:25,733 [17   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"cc4c3981-56ef-4e6d-9758-288a04668f26","IpAddress":"10.0.75.1","TenantId":null,"UserId":1,"ConnectTime":"2019-10-18T05:20:25.733868-04:00","Properties":{}}
+DEBUG 2019-10-18 05:20:25,811 [32   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: cc4c3981-56ef-4e6d-9758-288a04668f26
+WARN  2019-10-18 05:20:34,373 [34   ] naries.DictionaryBasedLocalizationSource - Can not find 'ConfirmPassword' in localization source 'CBEApp'!
+DEBUG 2019-10-18 05:20:38,703 [34   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"433f9923-573a-4bb6-b99b-f96c834c30bb","IpAddress":"10.0.75.1","TenantId":null,"UserId":1,"ConnectTime":"2019-10-18T05:20:38.703377-04:00","Properties":{}}
+DEBUG 2019-10-18 05:20:38,725 [16   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 433f9923-573a-4bb6-b99b-f96c834c30bb
+DEBUG 2019-10-18 05:20:56,489 [33   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: e5dd0ab0-0832-4937-a771-078fbd493a4b
+DEBUG 2019-10-18 05:21:06,490 [17   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: cc4c3981-56ef-4e6d-9758-288a04668f26
+WARN  2019-10-18 05:21:38,634 [34   ] nHandling.AbpApiExceptionFilterAttribute - User name mlatham-admin is invalid, can only contain letters or digits.
+Abp.UI.UserFriendlyException: User name mlatham-admin is invalid, can only contain letters or digits.
+   at Abp.IdentityFramework.IdentityResultExtensions.CheckErrors(IdentityResult identityResult, ILocalizationManager localizationManager)
+   at CBEApp.Users.UserAppService.CheckErrors(IdentityResult identityResult) in C:\Development\CBEApp\src\CBEApp.Application\Users\UserAppService.cs:line 131
+   at Castle.Proxies.UserAppServiceProxy.CheckErrors_callback(IdentityResult identityResult)
+   at Castle.Proxies.Invocations.UserAppService_CheckErrors.InvokeMethodOnTarget()
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Abp.Authorization.AuthorizationInterceptor.Intercept(IInvocation invocation)
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Abp.Domain.Uow.UnitOfWorkInterceptor.PerformSyncUow(IInvocation invocation, UnitOfWorkOptions options)
+   at Abp.Domain.Uow.UnitOfWorkInterceptor.PerformUow(IInvocation invocation, UnitOfWorkOptions options)
+   at Abp.Domain.Uow.UnitOfWorkInterceptor.Intercept(IInvocation invocation)
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Abp.Auditing.AuditingInterceptor.Intercept(IInvocation invocation)
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Abp.Runtime.Validation.Interception.ValidationInterceptor.Intercept(IInvocation invocation)
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Castle.Proxies.UserAppServiceProxy.CheckErrors(IdentityResult identityResult)
+   at CBEApp.Users.UserAppService.<Create>d__5.MoveNext() in C:\Development\CBEApp\src\CBEApp.Application\Users\UserAppService.cs:line 65
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Abp.Threading.InternalAsyncHelper.<AwaitTaskWithPostActionAndFinallyAndGetResult>d__5`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Abp.Threading.InternalAsyncHelper.<AwaitTaskWithFinallyAndGetResult>d__3`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Threading.Tasks.TaskHelpersExtensions.<CastToObject>d__1`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Abp.WebApi.Uow.AbpApiUowFilter.<ExecuteActionFilterAsync>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Abp.WebApi.Validation.AbpApiValidationFilter.<ExecuteActionFilterAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Abp.WebApi.Auditing.AbpApiAuditFilter.<ExecuteActionFilterAsync>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Abp.WebApi.Security.AntiForgery.AbpAntiForgeryApiFilter.<ExecuteAuthorizationFilterAsync>d__10.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Abp.WebApi.Authorization.AbpApiAuthorizeFilter.<ExecuteAuthorizationFilterAsync>d__7.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.AuthenticationFilterResult.<ExecuteAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__6.MoveNext()
+WARN  2019-10-18 05:21:55,797 [16   ] naries.DictionaryBasedLocalizationSource - Can not find 'ConfirmPassword' in localization source 'CBEApp'!
+DEBUG 2019-10-18 05:21:59,693 [33   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"9d8186b6-1997-4ec4-80e8-98426b1247ed","IpAddress":"10.0.75.1","TenantId":null,"UserId":1,"ConnectTime":"2019-10-18T05:21:59.692149-04:00","Properties":{}}
+DEBUG 2019-10-18 05:21:59,709 [34   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 9d8186b6-1997-4ec4-80e8-98426b1247ed
+DEBUG 2019-10-18 05:22:26,704 [32   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 433f9923-573a-4bb6-b99b-f96c834c30bb
+DEBUG 2019-10-18 09:13:50,660 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2019-10-18 09:13:58,038 [1    ] Abp.Modules.AbpModuleManager             - Found 17 ABP modules in total.
+DEBUG 2019-10-18 09:13:58,063 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: CBEApp.Web.CBEAppWebModule, CBEApp.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-10-18 09:13:58,067 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: CBEApp.CBEAppDataModule, CBEApp.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-10-18 09:13:58,068 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=4.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-10-18 09:13:58,068 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=4.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-10-18 09:13:58,069 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=4.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-10-18 09:13:58,069 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=4.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-10-18 09:13:58,070 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=4.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-10-18 09:13:58,070 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=4.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-10-18 09:13:58,071 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: CBEApp.CBEAppCoreModule, CBEApp.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-10-18 09:13:58,071 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: CBEApp.CBEAppApplicationModule, CBEApp.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-10-18 09:13:58,072 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=4.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-10-18 09:13:58,072 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: CBEApp.Api.CBEAppWebApiModule, CBEApp.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-10-18 09:13:58,072 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=4.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-10-18 09:13:58,073 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=4.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-10-18 09:13:58,073 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=4.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-10-18 09:13:58,073 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.SignalR.AbpWebSignalRModule, Abp.Web.SignalR, Version=4.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-10-18 09:13:58,074 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=4.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-10-18 09:13:58,091 [1    ] Abp.Modules.AbpModuleManager             - 17 modules loaded.
+DEBUG 2019-10-18 09:14:05,863 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-10-18 09:14:05,865 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-10-18 09:14:05,866 [1    ] o.Configuration.LanguageManagementConfig - Converted CBEApp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-10-18 09:14:05,866 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-10-18 09:14:10,018 [1    ] EntityFramework.AbpEntityFrameworkModule - Registering DbContext: CBEApp.EntityFramework.CBEAppDbContext, CBEApp.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-10-18 09:14:24,418 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2019-10-18 09:14:24,900 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2019-10-18 09:14:25,075 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2019-10-18 09:14:25,097 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: CBEApp
+DEBUG 2019-10-18 09:14:25,192 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2019-10-18 09:14:29,094 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Castle.Proxies.BackgroundJobManagerProxy
+DEBUG 2019-10-18 09:14:30,142 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 11 classes define auto mapping attributes
+DEBUG 2019-10-18 09:14:30,142 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CBEApp.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2019-10-18 09:14:30,372 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CBEApp.Sessions.Dto.UserLoginInfoDto
+DEBUG 2019-10-18 09:14:30,373 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CBEApp.Users.Dto.CreateUserDto
+DEBUG 2019-10-18 09:14:30,375 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CBEApp.Users.Dto.UpdateUserDto
+DEBUG 2019-10-18 09:14:30,375 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CBEApp.Users.Dto.UserDto
+DEBUG 2019-10-18 09:14:30,375 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CBEApp.Roles.Dto.PermissionDto
+DEBUG 2019-10-18 09:14:30,376 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CBEApp.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2019-10-18 09:14:30,379 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CBEApp.MultiTenancy.Dto.EditTenantDto
+DEBUG 2019-10-18 09:14:30,379 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CBEApp.MultiTenancy.Dto.TenantDto
+DEBUG 2019-10-18 09:14:30,379 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CBEApp.Web.Models.Account.TenantChangeViewModel
+DEBUG 2019-10-18 09:14:30,380 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CBEApp.Web.Models.Account.TenantSelectionViewModel+TenantInfo
+DEBUG 2019-10-18 09:17:06,430 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'CBEApp.Sessions.ISessionAppService' with service name 'app/session'.
+DEBUG 2019-10-18 09:17:06,433 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'CBEApp.Users.IUserAppService' with service name 'app/user'.
+DEBUG 2019-10-18 09:17:06,435 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'CBEApp.Roles.IRoleAppService' with service name 'app/role'.
+DEBUG 2019-10-18 09:17:06,466 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'CBEApp.MultiTenancy.ITenantAppService' with service name 'app/tenant'.
+DEBUG 2019-10-18 09:17:06,477 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'CBEApp.Configuration.IConfigurationAppService' with service name 'app/configuration'.
+DEBUG 2019-10-18 09:17:06,480 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'CBEApp.Authorization.Accounts.IAccountAppService' with service name 'app/account'.
+DEBUG 2019-10-18 09:22:26,920 [10   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"3f19100b-8c07-439c-b5a9-7bae09b435a2","IpAddress":"10.0.75.1","TenantId":null,"UserId":1,"ConnectTime":"2019-10-18T09:22:26.8984744-04:00","Properties":{}}
+DEBUG 2019-10-18 09:22:27,050 [22   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 3f19100b-8c07-439c-b5a9-7bae09b435a2
+WARN  2019-10-18 09:23:01,722 [8    ] naries.DictionaryBasedLocalizationSource - Can not find 'ConfirmPassword' in localization source 'CBEApp'!
+DEBUG 2019-10-18 09:23:30,635 [11   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"38b2a386-86cf-4d0e-acb2-21b2b9151328","IpAddress":"10.0.75.1","TenantId":null,"UserId":1,"ConnectTime":"2019-10-18T09:23:30.635072-04:00","Properties":{}}
+DEBUG 2019-10-18 09:23:30,716 [11   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 38b2a386-86cf-4d0e-acb2-21b2b9151328
+WARN  2019-10-18 09:23:33,736 [19   ] naries.DictionaryBasedLocalizationSource - Can not find 'ConfirmPassword' in localization source 'CBEApp'!
+DEBUG 2019-10-18 09:23:44,092 [16   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 3f19100b-8c07-439c-b5a9-7bae09b435a2
+WARN  2019-10-18 09:24:36,203 [16   ] CBEApp.Web.Controllers.AccountController - Login failed!
+Abp.UI.UserFriendlyException: Login failed!
+   at CBEApp.Web.Controllers.AccountController.<GetLoginResultAsync>d__13.MoveNext() in C:\Development\CBEApp\src\CBEApp.Web\Controllers\AccountController.cs:line 130
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at CBEApp.Web.Controllers.AccountController.<Login>d__12.MoveNext() in C:\Development\CBEApp\src\CBEApp.Web\Controllers\AccountController.cs:line 100
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Mvc.Async.TaskAsyncActionDescriptor.EndExecute(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass8_0.<BeginInvokeAsynchronousActionMethod>b__1(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass11_0.<InvokeActionMethodFilterAsynchronouslyRecursive>b__0()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass11_2.<InvokeActionMethodFilterAsynchronouslyRecursive>b__2()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass11_2.<InvokeActionMethodFilterAsynchronouslyRecursive>b__2()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass11_2.<InvokeActionMethodFilterAsynchronouslyRecursive>b__2()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass11_2.<InvokeActionMethodFilterAsynchronouslyRecursive>b__2()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass7_0.<BeginInvokeActionMethodWithFilters>b__1(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_6.<BeginInvokeAction>b__4()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_1.<BeginInvokeAction>b__1(IAsyncResult asyncResult)
+DEBUG 2019-10-18 09:24:42,167 [14   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 38b2a386-86cf-4d0e-acb2-21b2b9151328
+DEBUG 2019-10-18 09:25:12,637 [13   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"9905d6e3-0e86-4a11-bbf4-ae7888d6e256","IpAddress":"10.0.75.1","TenantId":null,"UserId":1,"ConnectTime":"2019-10-18T09:25:12.6347777-04:00","Properties":{}}
+DEBUG 2019-10-18 09:25:14,046 [13   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 9905d6e3-0e86-4a11-bbf4-ae7888d6e256
+DEBUG 2019-10-18 09:26:48,128 [10   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is reconnected: {"ConnectionId":"9905d6e3-0e86-4a11-bbf4-ae7888d6e256","IpAddress":"10.0.75.1","TenantId":null,"UserId":1,"ConnectTime":"2019-10-18T09:25:12.6347777-04:00","Properties":{}}
+DEBUG 2019-10-18 09:27:04,139 [20   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"a2fce4c3-4592-4721-a637-535e03a727e0","IpAddress":"10.0.75.1","TenantId":null,"UserId":1,"ConnectTime":"2019-10-18T09:27:04.1398689-04:00","Properties":{}}
+DEBUG 2019-10-18 09:27:04,632 [23   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: a2fce4c3-4592-4721-a637-535e03a727e0
+WARN  2019-10-18 09:27:05,521 [20   ] naries.DictionaryBasedLocalizationSource - Can not find 'EditTenant' in localization source 'CBEApp'!
