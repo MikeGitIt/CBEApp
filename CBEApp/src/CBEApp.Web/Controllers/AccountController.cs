@@ -94,6 +94,7 @@ namespace CBEApp.Web.Controllers
         [HttpPost]
         [DisableAuditing]
         public async Task<JsonResult> Login(LoginViewModel loginModel, string returnUrl = "", string returnUrlHash = "")
+        //public ActionResult Login(LoginViewModel loginModel, string returnUrl = "", string returnUrlHash = "")
         {
             CheckModelState();
 
@@ -116,6 +117,9 @@ namespace CBEApp.Web.Controllers
             }
 
             return Json(new AjaxResponse { TargetUrl = returnUrl });
+
+            //return RedirectToAction("AddUser", "Admin");
+
         }
 
         private async Task<AbpLoginResult<Tenant, User>> GetLoginResultAsync(string usernameOrEmailAddress, string password, string tenancyName)

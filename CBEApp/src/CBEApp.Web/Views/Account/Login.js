@@ -10,10 +10,12 @@
                 return;
             }
 
+            debugger;
+            url: $loginForm.attr('action');
             abp.ui.setBusy(
                 $('#LoginArea'),
-
-                abp.ajax({
+                
+                abp.ajax({                     
                     contentType: 'application/x-www-form-urlencoded',
                     url: $loginForm.attr('action'),
                     data: $loginForm.serialize()
