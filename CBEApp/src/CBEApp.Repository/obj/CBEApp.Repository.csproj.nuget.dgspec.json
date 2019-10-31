@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\conpynn\\source\\repos\\CBEApp\\CBEApp\\src\\CBEApp.Repository\\CBEApp.Repository.csproj": {}
+    "C:\\Users\\conpynn\\Source\\Repos\\CBEApp\\CBEApp\\src\\CBEApp.Repository\\CBEApp.Repository.csproj": {}
   },
   "projects": {
-    "C:\\Users\\conpynn\\source\\repos\\CBEApp\\CBEApp\\src\\CBEApp.Repository\\CBEApp.Repository.csproj": {
+    "C:\\Users\\conpynn\\Source\\Repos\\CBEApp\\CBEApp\\src\\CBEApp.Repository\\CBEApp.Repository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\conpynn\\source\\repos\\CBEApp\\CBEApp\\src\\CBEApp.Repository\\CBEApp.Repository.csproj",
+        "projectUniqueName": "C:\\Users\\conpynn\\Source\\Repos\\CBEApp\\CBEApp\\src\\CBEApp.Repository\\CBEApp.Repository.csproj",
         "projectName": "CBEApp.Repository",
-        "projectPath": "C:\\Users\\conpynn\\source\\repos\\CBEApp\\CBEApp\\src\\CBEApp.Repository\\CBEApp.Repository.csproj",
+        "projectPath": "C:\\Users\\conpynn\\Source\\Repos\\CBEApp\\CBEApp\\src\\CBEApp.Repository\\CBEApp.Repository.csproj",
         "packagesPath": "C:\\Users\\conpynn\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\conpynn\\source\\repos\\CBEApp\\CBEApp\\src\\CBEApp.Repository\\obj\\",
+        "outputPath": "C:\\Users\\conpynn\\Source\\Repos\\CBEApp\\CBEApp\\src\\CBEApp.Repository\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
