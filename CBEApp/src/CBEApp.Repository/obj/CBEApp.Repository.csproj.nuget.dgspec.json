@@ -1,24 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\conpynn\\Source\\Repos\\CBEApp\\CBEApp\\src\\CBEApp.Repository\\CBEApp.Repository.csproj": {}
+    "C:\\Users\\conceej\\source\\repos\\CBEApp\\CBEApp\\CBEApp\\src\\CBEApp.Repository\\CBEApp.Repository.csproj": {}
   },
   "projects": {
-    "C:\\Users\\conpynn\\Source\\Repos\\CBEApp\\CBEApp\\src\\CBEApp.Repository\\CBEApp.Repository.csproj": {
+    "C:\\Users\\conceej\\source\\repos\\CBEApp\\CBEApp\\CBEApp\\src\\CBEApp.Repository\\CBEApp.Repository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\conpynn\\Source\\Repos\\CBEApp\\CBEApp\\src\\CBEApp.Repository\\CBEApp.Repository.csproj",
+        "projectUniqueName": "C:\\Users\\conceej\\source\\repos\\CBEApp\\CBEApp\\CBEApp\\src\\CBEApp.Repository\\CBEApp.Repository.csproj",
         "projectName": "CBEApp.Repository",
-        "projectPath": "C:\\Users\\conpynn\\Source\\Repos\\CBEApp\\CBEApp\\src\\CBEApp.Repository\\CBEApp.Repository.csproj",
-        "packagesPath": "C:\\Users\\conpynn\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\conpynn\\Source\\Repos\\CBEApp\\CBEApp\\src\\CBEApp.Repository\\obj\\",
+        "projectPath": "C:\\Users\\conceej\\source\\repos\\CBEApp\\CBEApp\\CBEApp\\src\\CBEApp.Repository\\CBEApp.Repository.csproj",
+        "packagesPath": "C:\\Users\\conceej\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\conceej\\source\\repos\\CBEApp\\CBEApp\\CBEApp\\src\\CBEApp.Repository\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\conpynn\\source\\repos\\CBEApp\\CBEApp\\src\\.nuget\\NuGet.Config",
-          "C:\\Users\\conpynn\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\conceej\\source\\repos\\CBEApp\\CBEApp\\CBEApp\\src\\.nuget\\NuGet.Config",
+          "C:\\Users\\conceej\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -50,10 +50,16 @@
             }
           },
           "imports": [
-            "net461"
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
           ],
           "assetTargetFallback": true,
-          "warn": true
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

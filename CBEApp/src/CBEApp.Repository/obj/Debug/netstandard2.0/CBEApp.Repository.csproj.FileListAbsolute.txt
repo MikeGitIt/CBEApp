@@ -1,0 +1,8 @@
+C:\Users\conceej\source\repos\CBEApp\CBEApp\CBEApp\src\CBEApp.Repository\bin\Debug\netstandard2.0\CBEApp.Repository.deps.json
+C:\Users\conceej\source\repos\CBEApp\CBEApp\CBEApp\src\CBEApp.Repository\bin\Debug\netstandard2.0\CBEApp.Repository.dll
+C:\Users\conceej\source\repos\CBEApp\CBEApp\CBEApp\src\CBEApp.Repository\bin\Debug\netstandard2.0\CBEApp.Repository.pdb
+C:\Users\conceej\source\repos\CBEApp\CBEApp\CBEApp\src\CBEApp.Repository\obj\Debug\netstandard2.0\CBEApp.Repository.csprojAssemblyReference.cache
+C:\Users\conceej\source\repos\CBEApp\CBEApp\CBEApp\src\CBEApp.Repository\obj\Debug\netstandard2.0\CBEApp.Repository.AssemblyInfoInputs.cache
+C:\Users\conceej\source\repos\CBEApp\CBEApp\CBEApp\src\CBEApp.Repository\obj\Debug\netstandard2.0\CBEApp.Repository.AssemblyInfo.cs
+C:\Users\conceej\source\repos\CBEApp\CBEApp\CBEApp\src\CBEApp.Repository\obj\Debug\netstandard2.0\CBEApp.Repository.dll
+C:\Users\conceej\source\repos\CBEApp\CBEApp\CBEApp\src\CBEApp.Repository\obj\Debug\netstandard2.0\CBEApp.Repository.pdb
