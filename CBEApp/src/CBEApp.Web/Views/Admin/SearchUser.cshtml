@@ -1,0 +1,160 @@
+﻿
+@using Abp.Web.Mvc.Extensions
+@model CBEApp.Web.Models.Admin.SearchUserListViewModel
+
+
+<link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.10/css/jquery.dataTables.min.css">
+<script type="text/javascript" language="javascript" src="//cdn.datatables.net/1.10.10/js/jquery.dataTables.min.js"></script>
+<script src="~/Scripts/jquery-1.10.2.min.js"></script>
+
+<h4 class="text-center">Cash Bash 2019 - Viva Las Vegas Bash</h4>
+<h5 class="text-primary">Search User</h5>
+
+    <div class="col" id="mainDiv" style="display:block">
+        <div class="form-group row ">
+            <label for="inputEmail" class="col-md-2 col-form-label">User Role:</label>
+            <div class="col-md-4">
+                @*<select id="Select1" class="form-control form-control-sm">
+                        <option>Admin</option>
+                        <option>Registra</option>
+                        <option>Tabulator</option>
+                        <option>Cashier</option>
+                        <option>Check</option>
+                    </select>*@
+                @Html.DropDownList("DropdownlistRole",
+    new SelectList(new List<SelectListItem> {
+         new SelectListItem { Text = "Registra", Value = "1"},
+         new SelectListItem { Text = "Admin", Value = "0"},
+         new SelectListItem { Text = "Tabulator", Value = "2"},
+          new SelectListItem { Text = "Cashier", Value = "2"},
+          new SelectListItem { Text = "Check", Value = "2"}
+
+     }, "Value", "Text"),
+    "Select Role",
+    new { @class = "form-control" })
+            </div>
+
+            <label for="inputEmail" class="col-md-2 col-form-label">User ID:</label>
+            <div class="col-md-3">
+                <input type="text" class="form-control" id="UserId" value="@Model.AttendeeID">
+
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="inputEmail" class="col-md-2 col-form-label">First Name:</label>
+            <div class="col-md-4">
+                <input type="text" class="form-control" id="FirstName" value="@Model.FirstName">
+            </div>
+
+            <label for="inputEmail" class="col-sm-2 col-form-label">Last Name:</label>
+            <div class="col-sm-3">
+                <input type="text" class="form-control" id="lastName" value="@Model.LastName">
+            </div>
+        </div>
+        <div class="form-group row ">
+            <label for="inputEmail" class="col-md-2 col-form-label">Event Name:</label>
+            <div class="col-md-4">
+                @*<select id="Select2" class="form-control form-control-sm">
+                        <option>Annual Incentive Trip 2017</option>
+                        <option>Annual Incentive Trip 2015</option>
+                        <option>Cash Bash 2014</option>
+                        <option>Annual Incentive Trip 2013</option>
+                        <option>Cash Bash 2011-Cruisin for Cash</option>
+                        <option>Cash Bash 2010-Wonderland Bash</option>
+                        <option>Cash Bash 2009</option>
+                        <option>Cash Bash 2008-Cashablanca</option>
+                    </select>*@
+
+                @Html.DropDownList("DropdownlistName",
+    new SelectList(new List<SelectListItem> {
+            new SelectListItem { Text = "Annual Incentive Trip 2017", Value = "1"},
+            new SelectListItem { Text = "Annual Incentive Trip 2015", Value = "0"},
+            new SelectListItem { Text = "Cash Bash 2014", Value = "2"},
+            new SelectListItem { Text = "Annual Incentive Trip 2013", Value = "3"},
+            new SelectListItem { Text = "Cash Bash 2011-Cruisin for Cash", Value = "4"},
+            new SelectListItem { Text = "Cash Bash 2010-Wonderland Bash", Value = "5"},
+            new SelectListItem { Text = "Cash Bash 2009", Value = "6"},
+            new SelectListItem { Text = "Cash Bash 2008-Cashablanca", Value = "7"}
+        }, "Value", "Text"),
+    "Select Event",
+    new { @class = "form-control" })
+            </div>
+
+            <label for="inputEmail" class="col-md-2 col-form-label">Inactive:</label>
+            <div class="col-md-3">
+                <input type="checkbox" class="form-control" id="uname" value="@Model.InActiveFlag">
+            </div>
+        </div>
+        <div class="form-group row">
+            <a style="text-decoration:underline" href="#"> Clear Users from Other Events</a>
+
+        </div>
+        <div>
+            <span>&nbsp</span>
+        </div>
+        <div class="col">
+            <div class="form-group row">
+                <div class="col-sm-10 offset-sm-2 text-center">
+                    <button type="reset" class="btn btn-primary">Clear</button>
+                    <button type="submit" id="btnSubmit" class="btn btn-primary" onclick="search();">Search</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="table-responsive">
+        <table id="tblGrid" class="table table-sm thead-light table-hover table-striped table-bordered " style="display:none">
+            @*<table class="table border" id="tblGrid" style="display:none">*@
+            <thead class="thead-light">
+                <tr>
+                    <th>Role</th>
+                    <th>User ID</th>
+                    <th>User Name</th>
+                    <th>Event ID</th>
+                    <th>Event</th>
+                    <th>Last Updated By</th>
+                    <th>Last Updated Date</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>ADM</td>
+                    <td>batcher</td>
+                    <td>Batcher,batcher</td>
+                    <td>1020</td>
+                    <td>Cash Bash 2005 - Viva Las Vegas Bash</td>
+                    <td>CASHBASH</td>
+                    <td>10/22/2002 7:09:18 PM</td>
+                </tr>
+                <tr>
+                    <td>ADM</td>
+                    <td>batcher</td>
+                    <td>Batcher,batcher</td>
+                    <td>1020</td>
+                    <td>Cash Bash 2005 - Viva Las Vegas Bash</td>
+                    <td>CASHBASH</td>
+                    <td>10/22/2002 7:09:18 PM</td>
+                </tr>
+                <tr>
+                    <td>ADM</td>
+                    <td>batcher</td>
+                    <td>Batcher,batcher</td>
+                    <td>1020</td>
+                    <td>Cash Bash 2005 - Viva Las Vegas Bash</td>
+                    <td>CASHBASH</td>
+                    <td>10/22/2002 7:09:18 PM</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script>
+        function search() {
+            document.getElementById("tblGrid").style.display = "block";
+            document.getElementById("mainDiv").style.display = "none";
+        }
+
+    </script>
+   
