@@ -2690,6 +2690,9 @@
     <Content Include="Abp\Framework\styles\abp.mixings.css.map" />
     <Content Include="Abp\Framework\styles\abp.less" />
     <Content Include="Abp\Framework\styles\abp.css.map" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <None Include="bundleconfig.json" />
     <None Include="compilerconfig.json" />
     <None Include="compilerconfig.json.defaults">
@@ -2782,12 +2785,15 @@
     <Content Include="Views\Tenants\_EditTenantModal.js" />
     <Content Include="Views\Users\Index.js" />
     <Content Include="Views\Users\_EditUserModal.js" />
-    <Content Include="Web.config">
-      <SubType>Designer</SubType>
-    </Content>
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\BundleConfig.cs" />
@@ -2800,6 +2806,7 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\AdminController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\Registration\SearchRegistrationController.cs" />
     <Compile Include="Controllers\Results\ChallengeResult.cs" />
     <Compile Include="Controllers\RolesController.cs" />
     <Compile Include="Controllers\TenantsController.cs" />
@@ -2826,6 +2833,13 @@
     </Compile>
     <Compile Include="Models\Layout\SideBarNavViewModel.cs" />
     <Compile Include="Models\Layout\SideBarUserAreaViewModel.cs" />
+    <Compile Include="Models\Registration\CASH_BASH_ATTENDEE.cs" />
+    <Compile Include="Models\Registration\CASH_BASH_DEALER.cs" />
+    <Compile Include="Models\Registration\CASH_BASH_DEALER_WINNER.cs" />
+    <Compile Include="Models\Registration\CASH_BASH_GUEST.cs" />
+    <Compile Include="Models\Registration\CASH_BASH_STAFF.cs" />
+    <Compile Include="Models\Registration\Dealer_Pull.cs" />
+    <Compile Include="Models\Registration\Travel.cs" />
     <Compile Include="Models\Roles\EditRoleModalViewModel.cs" />
     <Compile Include="Models\Roles\RoleListViewModel.cs" />
     <Compile Include="Models\Users\EditUserModalViewModel.cs" />
@@ -2966,12 +2980,6 @@
     <Content Include="Views\Shared\_MainLayout.cshtml" />
     <Content Include="Views\Admin\AddUser.cshtml" />
     <Content Include="Views\Admin\AddEditTitles.cshtml" />
-    <None Include="Web.Debug.config">
-      <DependentUpon>Web.config</DependentUpon>
-    </None>
-    <None Include="Web.Release.config">
-      <DependentUpon>Web.config</DependentUpon>
-    </None>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CBEApp.Application\CBEApp.Application.csproj">
@@ -2997,7 +3005,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\Registration\" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
