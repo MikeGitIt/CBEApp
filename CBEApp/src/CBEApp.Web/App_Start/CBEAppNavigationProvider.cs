@@ -39,6 +39,52 @@ namespace CBEApp.Web
                         icon: "people",
                         requiredPermissionName: PermissionNames.Pages_Users
                     )
+
+
+                     .AddItem
+                     (
+                    new MenuItemDefinition
+                    (
+                        PageNames.AddWinner,
+                        L("AddWinner"),
+                        url: "Winner/AddWinner",
+                        icon: "people",
+                        requiredPermissionName: PermissionNames.Pages_Roles
+                    )
+                )
+
+
+
+                     .AddItem
+                     (
+                    new MenuItemDefinition
+                    (
+                        PageNames.InitCash,
+                        L("InitCash"),
+                        url: "Admin/InitCash",
+                        icon: "people",
+                        requiredPermissionName: PermissionNames.Pages_Roles
+                    )
+                )
+
+
+
+                     .AddItem
+                     (
+                    new MenuItemDefinition
+                    (
+                        PageNames.SearchUser,
+                        L("SearchUser"),
+                        url: "Admin/SearchUser",
+                        icon: "people",
+                        requiredPermissionName: PermissionNames.Pages_Roles
+                    )
+                )
+
+
+
+
+
                 ).AddItem(
                     new MenuItemDefinition(
                         PageNames.Roles,
