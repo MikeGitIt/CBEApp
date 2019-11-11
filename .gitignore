@@ -79,4 +79,8 @@ _[Ss]cripts
 *.dll
 *.nupkg
 *.ncrunchsolution
+<<<<<<< HEAD
 *.dot[Cc]over
+=======
+*.dot[Cc]over
+>>>>>>> 9c816798128ef12b08d569a11fc5f8822466b8ea
