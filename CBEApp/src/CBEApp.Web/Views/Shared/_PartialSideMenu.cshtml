@@ -1,0 +1,12 @@
+﻿
+<div id="mySidebar" class="sidebar">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+    @foreach (var item in ViewBag.v)
+    {
+        <a href="@item.ActionName" id=@item.ActionName>@item.Name</a>
+
+    }
+</div>
+<div>
+    <button class="openbtn" onclick="openNav()">☰</button>
+</div>

@@ -586,7 +586,11 @@
     <Content Include="fonts\roboto\roboto.css" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
+    <Content Include="images\chips.jpg" />
+    <Content Include="images\falling_money.gif" />
     <Content Include="images\JMFE-logo.png" />
+    <Content Include="images\moneypile.jpg" />
+    <Content Include="images\spin%24.gif" />
     <Content Include="images\user-img-background.jpg" />
     <Content Include="images\user.png" />
     <Content Include="js\admin.js" />
@@ -2788,6 +2792,9 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Login\Login.cshtml" />
+    <Content Include="Views\Shared\_PartialSideMenu.cshtml" />
+    <Content Include="Views\Registration\DealerPullsKept.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -2806,6 +2813,7 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\AdminController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\LoginController.cs" />
     <Compile Include="Controllers\Registration\SearchRegistrationController.cs" />
     <Compile Include="Controllers\Results\ChallengeResult.cs" />
     <Compile Include="Controllers\RolesController.cs" />
@@ -2814,8 +2822,13 @@
     <Compile Include="Helpers\HtmlHelpers.cs" />
     <Compile Include="Models\Account\TenantChangeModalViewModel.cs" />
     <Compile Include="Models\Account\TenantChangeViewModel.cs" />
+    <Compile Include="Models\Admin\CashBashCashViewModel.cs" />
+    <Compile Include="Models\Admin\CashBashEventViewModel.cs" />
+    <Compile Include="Models\Admin\CashBashWinnerTitleViewModel.cs" />
     <Compile Include="Models\Admin\CASH_BASH_CASH.cs" />
     <Compile Include="Models\Admin\CASH_BASH_EVENT.cs" />
+    <Compile Include="Models\Admin\UserSecurityViewModel.cs" />
+    <Compile Include="Models\Admin\UserViewModel.cs" />
     <Compile Include="Models\Admin\USER_IDENTIFIER.cs" />
     <Compile Include="Models\Admin\USER_SECURITY.cs" />
     <Compile Include="Models\Common\Modals\ModalHeaderViewModel.cs" />
@@ -2833,6 +2846,7 @@
     </Compile>
     <Compile Include="Models\Layout\SideBarNavViewModel.cs" />
     <Compile Include="Models\Layout\SideBarUserAreaViewModel.cs" />
+    <Compile Include="Models\MenuList.cs" />
     <Compile Include="Models\Registration\CASH_BASH_ATTENDEE.cs" />
     <Compile Include="Models\Registration\CASH_BASH_DEALER.cs" />
     <Compile Include="Models\Registration\CASH_BASH_DEALER_WINNER.cs" />
