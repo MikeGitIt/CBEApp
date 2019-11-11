@@ -1,0 +1,128 @@
+﻿@model CBEApp.Web.Models.Registration.Dealer_Pull
+@{
+    ViewBag.Title = "Dealer Pull Order";
+    Layout = "~/Views/Shared/_MainLayout.cshtml";
+}
+
+
+<h4 class="text-center">@ViewBag.EventNm</h4>
+<h5 id="idh" class="text-primary">Dealer Pull Order</h5>
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    <fieldset>
+
+        @*<form id="configform" name="input" action="#" method="get">*@
+        <div class="col form-control-sm h-auto" id="divMain">
+            <div class="form-group row">
+                <div class="col-md-2">
+                    <label for="inputEmail">Please select Dealer: Dealer#:</label>
+                    <span class="required">*</span>
+                </div>
+                <div class="col-md-2">
+                    @Html.TextBoxFor(x => x.Pull_Ordr_Nb, new { @class = "form-control", id = "txtAdd", @required = true, @maxlength = "30" })
+                </div>
+                <div class="col-md-8">
+                    @Html.DropDownListFor(x => x.Pull_Ordr_Nb, ViewBag.PullOrder as SelectList, new { @class = "form-control", id = "ddlTitle" })
+                </div> 
+            </div> 
+            <div class="form-group row">
+                <div class="col-md-2">
+                    <label for="inputEmail">Address:</label>
+                    <span class="required">*</span>
+                </div>
+                <div class="col-md-2">
+                    @Html.Label("Address","")
+                </div>
+                <div class="col-md-2">
+                    <label for="inputEmail">Field Rep:</label>
+                </div>
+                <div class="col-md-2">
+                    @Html.Label("FieldRep","")
+                </div>
+                
+            </div>
+            <div class="form-group row">
+                <div class="col-md-2">
+                    <label for="lblPhone">Phone:</label>
+                    <span class="required">*</span>
+                </div>
+                <div class="col-md-2">
+                    @Html.Label("Phone", "")
+                </div>
+                <div class="col-md-2">
+                    @Html.Label("Fax", "Fax")
+                    <span class="required">*</span>
+                </div>
+                <div class="col-md-2">
+                    @Html.Label("Fax", "")
+                </div>
+                <div class="col-md-2">
+                    @Html.Label("Territory", "Territory")
+                </div>
+                <div class="col-md-2">
+                    @Html.Label("Territory", "")
+                </div>
+            </div>
+            <div class="form-group row ">
+                <div class=" col-md-2">
+                    <label for="txtWinner">Group Name:</label>
+                    <span class="required">*</span>
+                </div>
+                <div class="col-md-2">
+                    @Html.TextBoxFor(x => x.Group_Nm, new { @class = "form-control", id = "txtWinner", @required = true, @maxlength = "11" })
+                </div>
+                <div class="col-md-2 ">
+                    <label for="inputEmail">Stage Name:</label>
+                    <span class="required">*</span>
+                </div>
+                <div class="col-md-2">
+                    @Html.TextBoxFor(x => x.Display_Nm, new { @class = "form-control ", id = "txtFName", @required = true, @maxlength = "25" })
+                </div>
+                <div class="col-md-2">
+                    <label for="inputEmail">Pull Order:</label>
+                    <span class="required">*</span>
+                </div>
+                <div class="col-md-2">
+                    @Html.TextBoxFor(x => x.Pull_Ordr_Nb, new { @class = "form-control ", id = "txtPullNb", @required = true, @maxlength = "25" })
+                </div>
+            </div>
+            <div> &nbsp; </div>
+            <div class="col">
+                <div class="form-group row">
+                    <div class="col-sm-10 offset-sm-2 text-center">
+                        <button type="button" class="btn btn-primary" onclick="return resetValues();">Reset</button>
+                        <button type="submit" id="btnSubmit" value="Save" name="btnSaveDel" class="btn btn-primary" onclick="return validate();">Save</button>
+                        <button type="submit" id="btnSubmit" value="Delete" name="btnSaveDel" class="btn btn-primary" onclick="return confirm('Are you sure you want delete');">Delete</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </fieldset>
+}
+
+
+
+<script>
+
+    $(document).ready(function () {
+        $("#txtArrDate").datepicker();
+
+        $("#txtDepDate").datepicker();
+    });
+    function validate() {
+        return true;
+    }
+
+    function resetValues() {
+
+        var winner = $('#txtWinner')[0].value;
+        $('form')[0].reset();
+        $('#txtWinner')[0].value = winner;
+        return false;
+    }
+
+
+</script>

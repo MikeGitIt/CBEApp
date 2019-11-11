@@ -1,15 +1,68 @@
-﻿using CBEApp.Web.Models;
+﻿using CBEApp.Web.Helpers;
+using CBEApp.Web.Models;
 using CBEApp.Web.Models.Admin;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using System.Web.Script.Serialization;
 
 namespace CBEApp.Web.Controllers
 {
     public class AdminController : Controller
     {
+
+        #region "--milind--"
+        public ActionResult SearchUser()
+        {
+            var model = new SearchUserListViewModel();
+            FillMenu();
+            return View(model);
+        }
+
+        [HttpGet]
+        public ActionResult InitCash()
+        {
+            FillMenu();
+            var model = new InitCashModel();
+            return View(model);
+        }
+        public ActionResult Index()
+        {
+            FillMenu();
+            return View(new InitCashModel());
+        }
+        //        [HttpPost(actio]
+        [HttpPost]
+        public ActionResult InitCash(InitCashModel initCashModel)
+        {
+            FillMenu();
+            //return View(new InitCashModel());
+            return View(initCashModel);
+        }
+        public string GetUserForEvent(string id)
+        {
+            // get the products from the repository 
+
+            var UserId = new List<SelectListItem>();
+
+            if (id == "1028")
+            {
+                UserId.Add(new SelectListItem() { Text = "cashbash", Value = "cashbash" });
+                UserId.Add(new SelectListItem() { Text = "Cashier1", Value = "Cashier1" });
+            }
+            else if (id == "1105")
+            {
+                UserId.Add(new SelectListItem() { Text = "batcher", Value = "batcher" });
+                UserId.Add(new SelectListItem() { Text = "donna", Value = "donna" });
+            }
+
+            return new JavaScriptSerializer().Serialize(UserId);
+        }
+      
+        #endregion
+
         // GET: Admin
         public ActionResult AddUser()
         {
@@ -54,44 +107,15 @@ namespace CBEApp.Web.Controllers
                 int titlecode = viewData.UpdatedTitleCode;
             }
 
-            return View();
+            FillMenu();
+            CashBashWinnerTitleViewModel titleView = PopulateData();
+            return View("AddEditTitles",titleView);
         }
 
         public void FillMenu()
-        {
-            List<MenuList> lst = new List<MenuList>();
-            MenuList men = new MenuList();
-            men.ActionName = "SearchUser";
-            men.Name = "Search User";
-            lst.Add(men);
-
-            men = new MenuList();
-            men.ActionName = "AddUser";
-            men.Name = "Add User";
-            lst.Add(men);
-
-
-            //men = new MenuList();
-            //men.ActionName = "EditEvent";
-            //men.Name = "Edit Event";
-            //lst.Add(men);
-
-            men = new MenuList();
-            men.ActionName = "AddEditTitles";
-            men.Name = "Add/Edit Titles";
-                       
-
-            men = new MenuList();
-            men.ActionName = "EditPullInfo";
-            men.Name = "Search User";
-            lst.Add(men);
-
-            men = new MenuList();
-            men.ActionName = "EditCash";
-            men.Name = "Edit cash";
-            lst.Add(men);
+        {            
             ViewBag.controller = "Admin";
-            ViewBag.v = lst;
+            ViewBag.v = SubMenu.AdminSubSectionMenu();
         }
 
         private CashBashWinnerTitleViewModel PopulateData()

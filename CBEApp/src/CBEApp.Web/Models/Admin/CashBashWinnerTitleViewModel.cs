@@ -24,7 +24,7 @@ namespace CBEApp.Web.Models.Admin
     {
         public int TitleCode { get; set; }
         public string TitleDescription { get; set; }
-        
+        public int EventId { get; set; }
     }
 
 }

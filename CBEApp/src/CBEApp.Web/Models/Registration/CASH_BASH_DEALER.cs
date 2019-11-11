@@ -1,9 +1,9 @@
 using System;
 using System.Collections.Generic;
 
-namespace CashBash_Sample.Models
+namespace CBEApp.Web.Models.Registration
 { 
-    public partial class CASH_BASH_DEALER
+    public partial class Cash_Bash_Dealer
     {
        // [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         //public CASH_BASH_DEALER()

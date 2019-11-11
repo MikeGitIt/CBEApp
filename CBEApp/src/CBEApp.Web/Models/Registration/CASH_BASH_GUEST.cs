@@ -1,9 +1,9 @@
 using System;
 using System.Collections.Generic;
 
-namespace CashBash_Sample.Models
+namespace CBEApp.Web.Models.Registration
 {
-    public partial class CASH_BASH_GUEST
+    public partial class Cash_Bash_Guest
     {
         public int ATNE_ID { get; set; }
         public int EVNT_ID { get; set; }
@@ -12,8 +12,8 @@ namespace CashBash_Sample.Models
         public Nullable<int> INVR_ID { get; set; }
         public string INVR_FWS_DLR_NB { get; set; }
     
-        public virtual CASH_BASH_ATTENDEE CASH_BASH_ATTENDEE { get; set; }
-        public virtual CASH_BASH_ATTENDEE CASH_BASH_ATTENDEE1 { get; set; }
-        public virtual CASH_BASH_DEALER CASH_BASH_DEALER { get; set; }
+        public virtual Cash_Bash_Attendee CASH_BASH_ATTENDEE { get; set; }
+        public virtual Cash_Bash_Attendee CASH_BASH_ATTENDEE1 { get; set; }
+        public virtual Cash_Bash_Dealer CASH_BASH_DEALER { get; set; }
     }
 }

@@ -1,12 +1,12 @@
 using System;
 using System.Collections.Generic;
 
-namespace CashBash_Sample.Models
+namespace CBEApp.Web.Models.Registration
 {
    
-    public partial class CASH_BASH_DEALER_WINNER
+    public partial class Cash_Bash_Dealer_Winner
     {
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        //[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         //public CASH_BASH_DEALER_WINNER()
         //{
         //    this.CASH_BASH_PULL = new HashSet<CASH_BASH_PULL>();
@@ -36,7 +36,7 @@ namespace CashBash_Sample.Models
         public string PARTIAL_PAYMENT_IN { get; set; }
         public Nullable<int> CASH_AMOUNT { get; set; }
     
-        //public virtual CASH_BASH_DEALER CASH_BASH_DEALER { get; set; }
+        public virtual Cash_Bash_Dealer CASH_BASH_DEALER { get; set; }
         //[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         //public virtual ICollection<CASH_BASH_PULL> CASH_BASH_PULL { get; set; }
         //[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]

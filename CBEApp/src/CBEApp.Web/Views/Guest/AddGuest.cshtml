@@ -1,0 +1,236 @@
+﻿@model CBEApp.Web.Models.Registration.ViewModelGuest
+@{
+    ViewBag.Title = "Add Guest";
+    Layout = "~/Views/Shared/_MainLayout.cshtml";
+}
+
+
+<h4 class="text-center">@ViewBag.EventNm</h4>
+<h5 id="idh" class="text-primary">Add Guest</h5>
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    <fieldset>
+
+        @*<form id="configform" name="input" action="#" method="get">*@
+        <div class="col form-control-sm h-auto" id="divMain">
+            <div class="form-group row ">
+                <div class=" col-md-2">
+                    <label for="txtWinner">Winner SSN:</label>
+                    <span class="required">*</span>
+                </div>
+                <div class="col-md-2">
+                    @Html.TextBoxFor(x => x.Winner_SSN, new { @class = "form-control", id = "txtWinner", @required = true, @maxlength = "11" })
+
+                </div>
+                <div class="col-md-2 ">
+                    <label for="inputEmail">First Name:</label>
+                    <span class="required">*</span>
+                </div>
+                <div class="col-md-2">
+
+                    @Html.TextBoxFor(x => x.ObjCbAttend.Frst_Nm, new { @class = "form-control ", id = "txtFName", @required = true, @maxlength = "25" })
+
+                </div>
+                <div class="col-md-2">
+                    <label for="inputEmail">Last Name:</label>
+                    <span class="required">*</span>
+                </div>
+                <div class="col-md-2">
+
+                    @Html.TextBoxFor(x => x.ObjCbAttend.Lst_Nm, new { @class = "form-control ", id = "txtLName", @required = true, @maxlength = "25" })
+
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-md-2">
+                    <label for="inputEmail">Address:</label>
+                    <span class="required">*</span>
+                </div>
+                <div class="col-md-2">
+                    @Html.TextBoxFor(x => x.objAttendAdd.Addr_Ln_1_Tx, new { @class = "form-control", id = "txtAdd", @required = true, @maxlength = "30" })
+                </div>
+                <div class="col-md-2">
+                    <label for="inputEmail" >Company:</label>
+                </div>
+                <div class="col-md-2">
+                    @Html.TextBoxFor(x => x.objAttendAdd.Addr_Ln_2_Tx, new { @class = "form-control", id = "txtCmpny", @maxlength = "30" })
+                </div>
+                <div class="col-md-2">
+                    <label for="inputEmail" class="col-md-2 col-form-label">Title:</label>
+                </div>
+                <div class="col-md-2">
+                    @Html.DropDownListFor(x => x.ObjCbAttend.Titl_Cd, ViewBag.ddlTitle as SelectList,new { @class = "form-control", id = "ddlTitle" })
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-md-2">
+                    <label for="txtCity">City:</label>
+                    <span class="required">*</span>
+                </div>
+                <div class="col-md-2">
+                    @Html.TextBoxFor(x => x.objAttendAdd.Atne_City_Nm, new { @class = "form-control", id = "txtCity", @required = true, @maxlength = "25" })
+                </div>
+                <div class="col-md-2">
+                    <label for="inputEmail" >State:</label>
+                    <span class="required">*</span>
+                </div>
+                <div class="col-md-2">
+                    @Html.DropDownListFor(x => x.objAttendAdd.Atne_St_Cd, ViewBag.State as SelectList, new { @class = "form-control w-75", @required = true, id = "ddlState" })
+                </div>
+                <div class="col-md-2">
+                    <label for="inputEmail" class="col-md-2 col-form-label">Zip:</label>
+                </div>
+                <div class="col-md-2">
+                    @Html.TextBoxFor(x => x.objAttendAdd.Atne_Zip_Cd, new { @class = "form-control", id = "txtZip", @maxlength = "11" })
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-md-2">
+                    <label for="inputEmail">Home Phone:</label>
+                </div>
+                <div class="col-md-2">
+                    @Html.TextBoxFor(x => x.ObjCbAttend.Hm_Phn_Nb, new { @class = "form-control", id = "txtPh", @maxlength = "13" })
+                </div>
+                <div class="col-md-2">
+                    <label for="inputEmail">Arrival Date:</label>
+                </div>
+                <div class="col-md-2">
+                    @Html.TextBoxFor(x => x.objTravel.Arvl_Dt, new { @class = "form-control", @readonly = true, id = "txtArrDate" })
+                </div>
+                <div class="col-md-2">
+                    <label for="inputEmail" class="col-md-2 col-form-label">Departure Date:</label>
+                </div>
+                <div class="col-md-2">
+                    @Html.TextBoxFor(x => x.objTravel.Depr_Dt, new { @class = "form-control", @readonly = true, id = "txtDepDate" })
+                </div>
+            </div>
+            <div class="form-group row">
+                <table class="table col-md-12">
+                    <tr>
+                        <td>
+                            <label for="inputEmail" class="col-form-label">Buy-In Type</label>
+                        </td>
+                        <td>
+                            <label for="inputEmail" class=" col-form-label">Amount</label>
+                        </td>
+                        <td>
+                            <label for="inputEmail" class="  col-form-label">Incld In Trip</label>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="txtLandAm" class="col-form-label">Land</label>
+                        </td>
+                        <td>
+                            $ @Html.TextBoxFor(x => x.objTravel.Lnd_Cost_Am, new { @class = "form-check-inline form-control w-75", id = "txtLandAm", @maxlength = "5" })
+                        </td>
+                        <td>
+
+                            @Html.RadioButtonFor(x => x.objTravel.Land_Buy_In_Typ_Cd, "TRP")
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="txtAirAm" class="col-form-label">Air</label>
+                        </td>
+                        <td>
+                            $  @Html.TextBoxFor(x => x.objTravel.Air_Cst_Am, new { @class = "form-check-inline form-control w-75", id = "txtAirAm", @maxlength = "5" })
+                        </td>
+                        <td>
+                            @Html.RadioButtonFor(x => x.objTravel.Air_Buy_In_Type_Cd, "TRP")
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="txtCashAm" class="col-form-label">Cash Allowance</label>
+                        </td>
+                        <td>
+                            $ @Html.TextBoxFor(x => x.objTravel.Csh_Alwc_Am, new { @class = "form-check-inline form-control w-75", id = "txtCashAm", @maxlength = "5" })
+                        </td>
+                        <td>
+                            @Html.RadioButtonFor(x => x.objTravel.Cash_Alwc_Type_Cd, "TRP")
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="txtOthAm" class="col-form-label">Other</label>
+                        </td>
+                        <td>
+                            $ @Html.TextBoxFor(x => x.objTravel.Othr_Cost_Am, new { @class = "form-check-inline form-control w-75", id = "txtOthAm", @maxlength = "5" })
+                        </td>
+                        <td>
+                            @Html.RadioButtonFor(x => x.objTravel.Othr_Cost_Type_Cd, "TRP")
+                        </td>
+
+                    </tr>
+                </table>
+            </div>
+            <div class="form-group row">
+                <div class="col-md-2 ">
+                    <label for="inputEmail" >Notes:</label>
+                </div>
+                @*<textarea class="col-md-10 " rows="3" placeholder="Notes" value="@Model.objAttendeeNote.Nt_Cmnt_Tx" id="txtNotes" required></textarea>*@
+            <div class="col-md-10 ">
+                @Html.TextAreaFor(x => x.objAttendeeNote.Nt_Cmnt_Tx, new { @class = "col-md-10", @rows = "3", id = "txtNotes", @maxlength = "8000" })
+            </div>
+            </div>
+            <div class="form-group row">
+                <div>
+                    <label for="inputEmail" class="col-form-label">Taxable</label>
+                    @Html.CheckBoxFor(x => x.ObjCbAttend.Txbl_In_bool, new { id = "chkTx" })
+                    <label for="inputEmail" class="col-form-label">VIP</label>
+
+                    @Html.CheckBoxFor(x => x.objTravel.Vip_In_bool, new { id = "chkVip" })
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <div>
+                    <label for="inputEmail" class="col-form-label">Note: Red label signifies required input.</label>
+                </div>
+            </div>
+
+            <div> &nbsp; </div>
+            <div class="col">
+                <div class="form-group row">
+                    <div class="col-sm-10 offset-sm-2 text-center">
+                        <button type="button" class="btn btn-primary" onclick="return resetValues();">Reset</button>
+                        <button type="submit" id="btnSubmit" value="Save" name="btnSaveDel" class="btn btn-primary" onclick="return validate();">Save</button>
+                        <button type="submit" id="btnSubmit" value="Delete" name="btnSaveDel" class="btn btn-primary" onclick="return confirm('Are you sure you want delete');">Delete</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </fieldset>
+}
+
+
+
+<script>
+
+    $(document).ready(function () {
+        $("#txtArrDate").datepicker();
+
+        $("#txtDepDate").datepicker();
+    });
+    function validate() {
+        return true;
+    }
+
+    function resetValues() {
+
+        var winner = $('#txtWinner')[0].value;
+        $('form')[0].reset();
+        $('#txtWinner')[0].value = winner;
+        return false;
+    }
+
+
+</script>
