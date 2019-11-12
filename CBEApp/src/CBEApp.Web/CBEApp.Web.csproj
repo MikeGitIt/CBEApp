@@ -492,6 +492,7 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\font-awesome.css" />
     <Content Include="Content\font-awesome.min.css" />
+    <Content Include="Content\jquery.dataTables.min.css" />
     <Content Include="Content\main.css" />
     <Content Include="Content\themes\base\accordion.css" />
     <Content Include="Content\themes\base\all.css" />
@@ -586,7 +587,11 @@
     <Content Include="fonts\roboto\roboto.css" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
+    <Content Include="images\chips.jpg" />
+    <Content Include="images\falling_money.gif" />
     <Content Include="images\JMFE-logo.png" />
+    <Content Include="images\moneypile.jpg" />
+    <Content Include="images\spin%24.gif" />
     <Content Include="images\user-img-background.jpg" />
     <Content Include="images\user.png" />
     <Content Include="js\admin.js" />
@@ -2690,6 +2695,7 @@
     <Content Include="Abp\Framework\styles\abp.mixings.css.map" />
     <Content Include="Abp\Framework\styles\abp.less" />
     <Content Include="Abp\Framework\styles\abp.css.map" />
+    <Content Include="Scripts\jquery.dataTables.min.js" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -2788,6 +2794,17 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Login\Login.cshtml" />
+    <Content Include="Views\Shared\_PartialSideMenu.cshtml" />
+    <Content Include="Views\Registration\DealerPullsKept.cshtml" />
+    <Content Include="Views\Admin\InitCash.cshtml" />
+    <Content Include="Views\Admin\SearchUser.cshtml" />
+    <Content Include="Views\Registration\GetPullOrder.cshtml" />
+    <Content Include="Views\Registration\Search.cshtml" />
+    <Content Include="Views\Guest\AddGuest.cshtml" />
+    <Content Include="Views\Guest\GuestSaveDelete.cshtml" />
+    <Content Include="Views\Winner\AddWinner.cshtml" />
+    <Content Include="Views\Winner\WinnerSaveDelete.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -2806,19 +2823,39 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\AdminController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Controllers\Registration\SearchRegistrationController.cs" />
+    <Compile Include="Controllers\LoginController.cs" />
+    <Compile Include="Controllers\Registration\DealerPullOrderController.cs" />
+    <Compile Include="Controllers\Registration\GuestController.cs" />
+    <Compile Include="Controllers\RegistrationController.cs" />
+    <Compile Include="Controllers\Registration\WinnerController.cs" />
     <Compile Include="Controllers\Results\ChallengeResult.cs" />
     <Compile Include="Controllers\RolesController.cs" />
     <Compile Include="Controllers\TenantsController.cs" />
     <Compile Include="Controllers\UsersController.cs" />
     <Compile Include="Helpers\HtmlHelpers.cs" />
+    <Compile Include="Helpers\SubMenu.cs" />
     <Compile Include="Models\Account\TenantChangeModalViewModel.cs" />
     <Compile Include="Models\Account\TenantChangeViewModel.cs" />
+    <Compile Include="Models\Admin\Attendee_Type.cs" />
+    <Compile Include="Models\Admin\CashBashCashViewModel.cs" />
+    <Compile Include="Models\Admin\CashBashEventViewModel.cs" />
+    <Compile Include="Models\Admin\CashBashWinnerTitleViewModel.cs" />
     <Compile Include="Models\Admin\CASH_BASH_CASH.cs" />
     <Compile Include="Models\Admin\CASH_BASH_EVENT.cs" />
+    <Compile Include="Models\Admin\Cash_Bash_Title.cs" />
+    <Compile Include="Models\Admin\InitCashModel.cs" />
+    <Compile Include="Models\Admin\SearchUserListViewModel.cs" />
+    <Compile Include="Models\Admin\TravelPrefernces.cs" />
+    <Compile Include="Models\Admin\UserSecurityViewModel.cs" />
+    <Compile Include="Models\Admin\UserViewModel.cs" />
     <Compile Include="Models\Admin\USER_IDENTIFIER.cs" />
     <Compile Include="Models\Admin\USER_SECURITY.cs" />
+    <Compile Include="Models\Common\Attendee_Address.cs" />
+    <Compile Include="Models\Common\Attendee_Note.cs" />
+    <Compile Include="Models\Common\Cash_Bash_Staff.cs" />
     <Compile Include="Models\Common\Modals\ModalHeaderViewModel.cs" />
+    <Compile Include="Models\Common\State.cs" />
+    <Compile Include="Models\Common\Travel.cs" />
     <Compile Include="Models\Layout\RightSideBarViewModel.cs" />
     <Compile Include="Models\Account\LoginFormViewModel.cs" />
     <Compile Include="Models\Account\LoginViewModel.cs" />
@@ -2833,13 +2870,16 @@
     </Compile>
     <Compile Include="Models\Layout\SideBarNavViewModel.cs" />
     <Compile Include="Models\Layout\SideBarUserAreaViewModel.cs" />
+    <Compile Include="Models\MenuList.cs" />
     <Compile Include="Models\Registration\CASH_BASH_ATTENDEE.cs" />
     <Compile Include="Models\Registration\CASH_BASH_DEALER.cs" />
     <Compile Include="Models\Registration\CASH_BASH_DEALER_WINNER.cs" />
     <Compile Include="Models\Registration\CASH_BASH_GUEST.cs" />
-    <Compile Include="Models\Registration\CASH_BASH_STAFF.cs" />
-    <Compile Include="Models\Registration\Dealer_Pull.cs" />
-    <Compile Include="Models\Registration\Travel.cs" />
+    <Compile Include="Models\Registration\DealerPullViewModel.cs" />
+    <Compile Include="Models\Registration\DEALER_PULL.cs" />
+    <Compile Include="Models\Registration\ViewModelGuest.cs" />
+    <Compile Include="Models\Registration\ViewModelSearchRegistration.cs" />
+    <Compile Include="Models\Registration\ViewModelWinner.cs" />
     <Compile Include="Models\Roles\EditRoleModalViewModel.cs" />
     <Compile Include="Models\Roles\RoleListViewModel.cs" />
     <Compile Include="Models\Users\EditUserModalViewModel.cs" />

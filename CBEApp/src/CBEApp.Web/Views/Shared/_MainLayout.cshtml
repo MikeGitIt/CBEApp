@@ -14,63 +14,14 @@
     <link rel="stylesheet" href="~/Content/main.css">
     <script src="~/Scripts/jquery.min.js"></script>
     <script src="~/Scripts/bootstrap.min.js"></script>
+    <link href="~/Content/themes/base/jquery-ui.css" rel="stylesheet" />
+    <script src="~/Scripts/jquery-ui-1.12.1.js"></script>
 
     @*<script src="~/Scripts/sidebarcontrol.js"></script>
-    <link rel="stylesheet" href="~/Content/fab.css">*@
+        <link rel="stylesheet" href="~/Content/fab.css">*@
 
     <script type="text/javascript" src="~/Scripts/sidebarcontrol.js">
-        $(document).ready(function () {
 
-            var activeTab = $("#lblAdmin")[0].outerText;
-            var title = '#' + $("#lblTitle")[0].outerText.trim();
-            $(title).css("background-color", "rgb(65, 165, 222)")// "#1997a4");
-            $(title).addClass("list-item-group");
-            $(title).css("color", "white");
-            $(title).css("font-weight", "bold");
-            var bgColor = 'rgb(65, 165, 222)'//'rgb(146, 82, 28)' //'#1997a4';//blueviolet
-            // var activeTab = localStorage.getItem('activeTab');
-
-
-            if (activeTab == 'Admin') {
-                // $("#admin").css("color", "#330099");
-                $("#admin").css("background-color", bgColor);
-                $("#admin").css("color", "white");
-                $("#admin").css("display", "block");
-                //$("#admin").css("border", "solid");
-            }
-            else if (activeTab == 'Registration') {
-
-                $("#registration").css("color", "white");
-                $("#registration").css("display", "block");
-                $("#registration").css("background-color", bgColor);
-            }
-            else if (activeTab == 'Check In') {
-                $("#checkin").css("color", "white");
-                $("#checkin").css("display", "block");
-                $("#checkin").css("background-color", bgColor);
-            }
-            else if (activeTab == 'Cashier') {
-                $("#cashier").css("color", "white");
-                $("#cashier").css("background-color", bgColor);
-                $("#cashier").css("display", "block");
-            }
-            else if (activeTab == 'Tabulation') {
-                $("#tabulation").css("color", "white");
-                $("#tabulation").css("display", "block");
-                $("#tabulation").css("background-color", bgColor);
-            }
-            else if (activeTab == 'Emcee') {
-                $("#emcee").css("color", "white");
-                $("#emcee").css("display", "block");
-                $("#emcee").css("background-color", bgColor);
-            }
-            else if (activeTab == 'Reports') {
-                $("#reports").css("color", "white");
-                $("#reports").css("display", "block");
-                $("#reports").css("background-color", bgColor);
-            }
-
-        });
     </script>
 </head>
 <body>
@@ -78,20 +29,20 @@
         <!--Navigation Bar-->
         <div class="header">
             <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top w-100 nav-fill">
-                <a href="#" class="navbar-brand"><img src="~/Content/themes/base/images/JMFE-logo.png" width="100" /></a>
+                <a href="#" class="navbar-brand"><img src="~/images/JMFE-logo.png" width="100" /></a>
                 <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav">
-                        <a href="#" class="nav-item nav-link active">Registration</a>
+                        <a href="/Registration/Search" class="nav-item nav-link active">Registration</a>
                         <a href="#" class="nav-item nav-link">Check In</a>
                         <a href="#" class="nav-item nav-link">Tabulation</a>
                         <a href="#" class="nav-item nav-link">EMCEE</a>
                         <a href="#" class="nav-item nav-link">Cashier</a>
                         <a href="#" class="nav-item nav-link">Reports</a>
-                        <a href="#" class="nav-item nav-link">Admin</a>
+                        <a href="/Admin/SearchUser" class="nav-item nav-link">Admin</a>
                     </div>
                     <div class="navbar-nav ml-auto">
                         <a href="#" class="nav-item nav-link">Login</a>
@@ -101,53 +52,16 @@
         </div>
         <!--Navigation Bar end-->
         <!--Sidebar-->
-        <div id="mySidebar" class="sidebar">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-            <a href="#">Action 1</a>
-            <a href="#">Action 2</a>
-            <a href="#">Action 3</a>
-            <a href="#">Action 4</a>
-            <a href="#">Action 5</a>
-            <a href="#">Action 6</a>
-        </div>
-        <div>
-            <button class="openbtn" onclick="openNav()">☰</button>
-        </div>
+        @{
+            Html.RenderPartial("_PartialSideMenu");
+        }
         <!--Sidebar end-->
         <!--Content. Present here for testing only. Will be a separate html injected through application logic-->
 
         <div class="container">
 
             @RenderBody()
-            @*<div class="row pageheading">
-                <h1>Cash Bash 2019 - Totally 80s Bash (STAGE)</h1>
-            </div>
-            <form action="#" method="post" class="inputform">
-                <h6 class="formheading">Search Users</h6>
-                <div class="form-group row">
-                    <label for="select" class="col-2 col-form-label">User Role:</label>
-                    <div class="col-4">
-                        <select id="select" name="select" class="custom-select">
-                            <option value="rabbit">Rabbit</option>
-                            <option value="duck">Duck</option>
-                            <option value="fish">Fish</option>
-                        </select>
-                    </div>
-                    <label for="select" class="col-2 col-form-label">User ID:</label>
-                    <div class="col-4">
-                        <select id="select" name="select" class="custom-select">
-                            <option value="rabbit">Rabbit</option>
-                            <option value="duck">Duck</option>
-                            <option value="fish">Fish</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="form-group row">
-                    <div class="offset-3 col-9">
-                        <button name="submit" type="submit" class="btn btn-primary">Submit</button>
-                    </div>
-                </div>
-            </form>*@
+
         </div>
     </div>
 </body>

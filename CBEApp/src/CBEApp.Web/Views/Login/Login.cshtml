@@ -1,0 +1,107 @@
+﻿@using System.Web.Optimization
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>@ViewBag.Title</title>
+
+    @*@Styles.Render("~/Content/css")
+        @Scripts.Render("~/bundles/modernizr")*@
+
+    <link rel="stylesheet" href="~/Content/bootstrap.min.css">
+    <link rel="stylesheet" href="~/Content/main.css">
+    <script src="~/Scripts/jquery.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="~/Scripts/sidebarcontrol.js">
+    </script>
+</head>
+
+<body>
+    <div class="container" id="main">
+        <!--Navigation Bar-->
+        <div class="header">
+            <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top w-100 nav-fill">
+                <a href="#" class="navbar-brand"><img src="assets/images/JMFE-logo.png" width="100" /></a>
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav">
+                        <a href="#" class="nav-item nav-link active d-lg-none">Registration</a>
+                        <a href="#" class="nav-item nav-link d-lg-none">Check In</a>
+                        <a href="#" class="nav-item nav-link d-lg-none">Tabulation</a>
+                        <a href="#" class="nav-item nav-link d-lg-none">EMCEE</a>
+                        <a href="#" class="nav-item nav-link d-lg-none">Cashier</a>
+                        <a href="#" class="nav-item nav-link d-lg-none">Reports</a>
+                        <a href="#" class="nav-item nav-link d-lg-none">Admin</a>
+                    </div>
+                    <div class="navbar-nav ml-auto">
+                        <a href="#" class="nav-item nav-link">Login</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <!--Navigation Bar end-->
+        <!--Sidebar-->
+        <div id="mySidebar" class="sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+            <a href="#">Login</a>            
+        </div>
+        <div>
+            <button class="openbtn" onclick="openNav()">☰</button>
+        </div>
+        <!--Sidebar end-->
+        <!--Content. Present here for testing only. Will be a separate html injected through application logic-->
+        <!-- Seach user-->
+        <!--Login page content-->
+        <div class="container" id="loginpage" style="display: none;">
+            <div class="row pageheading">
+                <h5>Cash Bash</h5>
+            </div>
+            <div class="row pageheading">
+                <h6 class="formheading">Please Login</h6>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="row">
+                        <img src="assets/images/moneypile.jpg" class="img-responsive" style="margin:auto;">
+                    </div>
+                    <div class="row">
+                        <img src="assets/images/chips.jpg" class="img-responsive" style="margin:auto;">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="container">
+                        <form action="#" method="post" class="loginform">
+                            <div class="form-group row">
+                                <label class="col-xs-2 col-form-label" for="select">Login ID:</label>
+                                <div class="col-md-10">
+                                    <input type="text" class="form-control" name="text">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-xs-2 col-form-label" for="pwd">Password:</label>
+                                <div class="col-md-10">
+                                    <input type="password" class="form-control" name="pwd">
+                                </div>
+                            </div>
+                            <div class="form-group form-actions">
+                                <button name="submit" type="submit" class="btn btn-primary">Clear</button>
+                                <button name="submit" type="submit" class="btn btn-primary">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-3"></div>
+            </div>
+        </div>
+        <!--End Login page-->
+    </div>
+</body>
+
+
+</html>

@@ -1,0 +1,189 @@
+﻿@model IEnumerable<CBEApp.Web.Models.Registration.ViewModelSearchRegistration>
+@{
+    Layout = "~/Views/Shared/_MainLayout.cshtml";
+}
+
+<h4 class="text-center">@ViewBag.EventNm</h4>
+<h5 id="idh" class="text-primary">Search Registration</h5>
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    <fieldset>
+        <div class="col form-control-sm h-auto" id="divMain">
+            <div class="form-group row ">
+                <label for="inputEmail" class="col-md-2 col-form-label">Attendee Type:</label>
+                <div class="col-md-4">
+
+                    @Html.DropDownList("ddlAttndType", ViewBag.AttendType as SelectList, new { @class = "form-control w-75" })
+                </div>
+
+                <label for="inputEmail" class="col-md-2 col-form-label">Title:</label>
+                <div class="col-md-4">
+                    @Html.DropDownList("ddlTitle", ViewBag.Title as SelectList, new { @class = "form-control w-75" })
+
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="inputEmail" class="col-md-2 col-form-label">First Name:</label>
+                <div class="col-md-4">
+                    @Html.TextBox("txtFName", "", new { @class = "form-control w-75" })
+                </div>
+                <label for="inputEmail" class="col-md-2 col-form-label">Last Name:</label>
+                <div class="col-md-4">
+                    @Html.TextBox("txtLName", "", new { @class = "form-control w-75" })
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="inputEmail" class="col-md-2 col-form-label">Arrival Date:</label>
+                <div class="col-md-4">
+                    @Html.TextBox("txtArrDate", "", new { @class = "form-control w-75" })
+                </div>
+
+                <label for="inputEmail" class="col-md-2 col-form-label">Departure Date:</label>
+                <div class="col-md-4">
+                    @Html.TextBox("txtDepDate", "", new { @class = "form-control w-75" })
+                </div>
+            </div>
+            <div class="col">
+                <div class="form-group row">
+                    <div class="col-md-3 offset-md-5 text-center ">
+                        <label for="inputEmail" class="col-form-label">VIP:</label>
+
+                        @Html.CheckBox("chkVip")
+
+                        <label for="inputEmail" class="col-form-label">Cancelled:</label>
+                        @Html.CheckBox("chkCancel")
+                    </div>
+                </div>
+            </div>
+            <div> &nbsp; </div>
+            <div class="col">
+                <div class="form-group row">
+                    <div class="col-sm-10 offset-sm-2 text-center">
+                        <button type="reset" class="btn btn-primary" onclick="return reset();">Reset</button>
+                        <button type="submit" id="btnSubmit" name="btnSubmit" value="Submit" onclick="return search();" class="btn btn-primary">Search</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="divTblR" style="display:none" class="text-right font-weight-bold">
+            <label>Total Records Found:@Model.Count()</label>
+        </div>
+        <div id="divTbl" style="display:none">
+            <table id="tblGrid" class="table  thead-light table-hover table-striped table-bordered" style="display:none;width:100%">
+                <thead>
+                    <tr>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Attnd_Type)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.SSN)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Attendee_Id)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Attendee_Name)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Guest)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Dealer_Name)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Stage_Name)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Group_Name)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Abs)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Pulls)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Split_Percentage)
+                        </th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Attnd_Type)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.SSN)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Attendee_Id)
+                            </td>
+                            <td>
+                                @Html.ActionLink(item.Attendee_Name, "GoToWinner", "Registration", new { Winner_id = item.SSN, AttendId = item.Attendee_Id, Oprn = item.Guest, DealName = item.Dealer_Name }, null)
+                            </td>
+                            <td>
+                                @Html.ActionLink(item.Guest, "GoToGuest", "Registration", new { Winner_id = item.SSN, AttendId = item.Attendee_Id, Oprn = item.Guest, DealName = item.Dealer_Name }, null)
+                            </td>
+                            <td>
+                                @Html.ActionLink(item.Dealer_Name, "GoToPullKept", "Registration", new { Winner_id = item.SSN, AttendId = item.Attendee_Id, Oprn = item.Guest, DealName = item.Dealer_Name }, null)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Stage_Name)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Group_Name)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Abs)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Pulls)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Split_Percentage)
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+
+        </div>
+    </fieldset>
+}
+<script src="~/Scripts/jquery.dataTables.min.js"></script>
+<link href="~/Content/jquery.dataTables.min.css" rel="stylesheet" />
+<script>
+
+    $(document).ready(function () {
+        // $('#tblGrid').DataTable();
+        $('#tblGrid').dataTable({
+            //"scrollY": "350px",
+            "scrollCollapse": false,
+            "bSort": false,
+            "paging": true,
+            "searching": false
+        });
+    });
+    function search() {
+        document.getElementById("tblGrid").style.display = "block";
+        document.getElementById("divTbl").style.display = "block";
+        document.getElementById("divTblR").style.display = "block";
+        document.getElementById("divMain").style.display = "none";
+        document.getElementById("idh").innerHTML = "Search Result";
+
+        return false;
+    }
+    function reset() {
+        $('#configform')[0].reset();
+        return false;
+    }
+
+</script>
+

@@ -1,4 +1,5 @@
-﻿@{
+﻿@model CBEApp.Web.Models.Admin.CashBashWinnerTitleViewModel
+@{
     Layout = "~/Views/Shared/_MainLayout.cshtml";
 }
 
@@ -11,7 +12,117 @@
 </div>
 <div id="divmessage" style="height:300px; display:none" class="row pageheading"><span id="successmsg">User successfully added!</span></div>
 
-<div class="col form-control-sm h-auto" id="formAddUser">
-    <form id="addUser">
-        </form>
-</div>
+<form action="WinnerTitleAction" method="post" class="user-inputform">
+
+
+    <div class="form-group row">
+        <div class="col-3"></div>
+        <label for="titleDiscription" class="col-2 text-danger">Title Description:</label>
+        @*<div class="col-1"></div>*@
+        <div class="col-3 pull-left">
+            @*<input type="text" class="form-control" id="newtitle">*@
+            @Html.TextBoxFor(model => model.NewTitleDescription, new { @id = "newtitledescription", @class = "form-control" })
+            @Html.HiddenFor(model => model.NewTitleCode, new { @id = "newtitlecode", @Value = @Model.NewTitleCode })
+        </div>
+        <div class="col-4">
+            <button name="Actionname" type="submit" value="Add" class="btn btn-primary">Add</button>
+        </div>
+    </div>
+    <hr>
+
+    <div class="form-group row">
+        <div class="col-3"></div>
+        <label for="titleDiscription" class="col-2 text-danger">Title Description:</label>
+        @*<div class="col-1"></div>*@
+        <div class="col-3 pull-left">
+            @*<input type="text" class="form-control" id="titleDescription">*@
+            @Html.TextBoxFor(model => model.UpdatedTitleDescription, new { @id = "modifiedtitledescription", @class = "form-control" })
+            @Html.HiddenFor(model => model.UpdatedTitleCode, new { @id = "modifiedtitlecode", @Value = @Model.UpdatedTitleCode })
+        </div>
+        <div class="col-4">
+            <button name="Actionname" type="submit" value="Update" class="btn btn-primary">Update</button>
+        </div>
+    </div>
+
+    <div class="form-group row mb-n3">
+        <div class="col-4"></div>
+        <p class="col-2 fill">Title Code</p>
+        <p class="col-2 fill pl-0">Title Description</p>
+        <div class="col-4"></div>
+    </div>
+    @for (int i = 0; i < Model.TitlesViewModel.Count; i++)
+    {
+        <div class="form-group row mb-n1" id="@("winnertitlesdiv"+i.ToString())">
+            <div class="col-4"></div>
+
+            <div class="col-1 text-center" id="selectable1">
+                @*<input type="checkbox" value="">*@
+                @Html.Label((i + 1).ToString())
+                @*@Html.CheckBoxFor(m => m.TitlesViewModel[i]., new { @id = @Model.UserSecurity[i].RoleName, @onclick = "chkRole_Click()" })*@
+
+                @*<label for="select" style="text-align: left; margin-left: 0.1rem;">Cashier:</label>*@
+
+            </div>
+            <div class="col-3 text-center" id="selectable2">
+                @Html.LabelFor(m => m.TitlesViewModel[i].TitleCode, @Model.TitlesViewModel[i].TitleDescription)
+            </div>
+
+            <div class="col-2"></div>
+        </div>
+    }
+
+</form>
+
+<script>
+    $(function () {
+        $("[id^='selectable']").click(function () {
+
+            $("[id^='selectable']").removeClass('selected');
+            $(this).addClass('selected');
+            $(this).siblings("[id^='selectable']").addClass('selected');
+            if ($(this).attr('id') === "selectable1") {
+                var str = $(this).siblings("[id^='selectable']").find('Label').text();
+                $('#modifiedtitledescription').val(str);
+                //$('#modifiedtitledescription').attr("data-title-code", $(this).find("Label").text());
+                $('#modifiedtitlecode').val( $(this).find("Label").text());
+            }
+            else {
+             
+                $('#modifiedtitledescription').val($(this).find("Label").text());
+                var titlecode = $(this).siblings("[id^='selectable1']").find('Label').text();
+                //$('#modifiedtitledescription').attr("data-title-code", titlecode);
+                $('#modifiedtitlecode').val(titlecode);
+            }
+        });
+    });
+
+</script>
+<style>
+
+    #selectable2:hover {
+        background-color: lightgray;
+        cursor: pointer
+    }
+
+    #selectable1:hover ~ #selectable2 {
+        background-color: lightgray;
+    }
+
+    #selectable2:hover ~ #selectable1 {
+        background-color: lightgray;
+    }
+
+    #selectable1:hover {
+        background-color: lightgray;
+        cursor: pointer
+    }
+    /*div[id*="selectable2"]:focus { background-color:lightgray; }*/
+
+    #selectable2::selection {
+        background: darkgray
+    }
+
+    .selected {
+        background: darkgray
+    }
+</style>
