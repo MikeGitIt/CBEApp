@@ -168,6 +168,7 @@ namespace CBEApp.Web.Controllers
             TempData["WinnerId"] = Winner_id;
             return RedirectToAction("AddWinner", "Winner");
         }
+
         [HttpGet]
         public ActionResult GoToGuest(string Winner_id, int AttendId, string Oprn, string DealName)
         {
