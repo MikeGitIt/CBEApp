@@ -7,6 +7,7 @@ using Abp.Web.Mvc.Authorization;
 using CashBash_Sample.Models;
 using CBEApp.Authorization;
 using CBEApp.Roles;
+using CBEApp.Web.Helpers;
 using CBEApp.Web.Models;
 using CBEApp.Web.Models.Admin;
 using CBEApp.Web.Models.Registration;
@@ -33,6 +34,7 @@ namespace CBEApp.Web.Controllers
         //}
         public ActionResult AddWinner(ViewModelWinner objVmWinner, string btnSaveDel)
         {
+           
             LoadDetails();
            
             List<State> objLst = new List<State>();
@@ -68,7 +70,11 @@ namespace CBEApp.Web.Controllers
 
             return View(objVmWinner);
         }
-
+        public void FillMenu()
+        {
+            ViewBag.controller = "Winner";
+            ViewBag.v = SubMenu.RegistrationSubSectionMenu();
+        }
         private void DeleteData()
         {
            // throw new NotImplementedException();
@@ -81,6 +87,7 @@ namespace CBEApp.Web.Controllers
 
         public void LoadDetails()
         {
+            FillMenu();
             CASH_BASH_EVENT cbEvent = new CASH_BASH_EVENT();
             cbEvent.EVNT_NM = "Cash Bash 2019 - Viva Las Vegas Bash";
             ViewBag.EventNm = cbEvent.EVNT_NM;

@@ -7,5 +7,8 @@ namespace CBEApp.Web
         public const string Tenants = "Tenants";
         public const string Users = "Users";
         public const string Roles = "Roles";
+        public const string SearchUser = "SearchUser";
+        public const string InitCash = "InitCash";
+        public const string AddWinner = "AddWinner";
     }
 }

@@ -7,6 +7,7 @@ using Abp.Web.Mvc.Authorization;
 using CashBash_Sample.Models;
 using CBEApp.Authorization;
 using CBEApp.Roles;
+using CBEApp.Web.Helpers;
 using CBEApp.Web.Models;
 using CBEApp.Web.Models.Admin;
 using CBEApp.Web.Models.Registration;
@@ -95,9 +96,8 @@ namespace CBEApp.Web.Controllers
             //        ViewBag.Message = "Guest Deleted Successfully";
             //        return View("GuestSaveDelete");
             //    }
-            //}
-
-            return View(obDealerPull);
+            //} 
+            return View("~/Views/Registration/GetPullOrder.cshtml", obDealerPull); ;
         }
 
         private void DeleteData()
@@ -112,115 +112,43 @@ namespace CBEApp.Web.Controllers
 
         public void LoadDetails()
         {
+            FillMenu();
             CASH_BASH_EVENT cbEvent = new CASH_BASH_EVENT();
             cbEvent.EVNT_NM = "Cash Bash 2019 - Viva Las Vegas Bash";
             ViewBag.EventNm = cbEvent.EVNT_NM;
 
-            List<Cash_Bash_Title> objLstTitle = new List<Cash_Bash_Title>();
-            Cash_Bash_Title objTitle = new Cash_Bash_Title();
+            List<Cash_Bash_Dealer> objLstTitle = new List<Cash_Bash_Dealer>();
+
+            Cash_Bash_Dealer objDealer = new Cash_Bash_Dealer();
 
 
-            objTitle.Atne_Title_CD = 0;
-            objTitle.Atne_Title_Desc = "Please select";
-            objTitle.Evnt_Id = 2;
-            objLstTitle.Add(objTitle);
+            //objDealer.FWS_DLR_NB = "0";
+            //objDealer.DLR_NM = "Please select";
+            //objDealer.objDealerPull.Group_Nm = "";
+            //objLstTitle.Add(objDealer);
 
-            objTitle = new Cash_Bash_Title();
-            objTitle.Atne_Title_CD = 2;
-            objTitle.Atne_Title_Desc = "F & I Manager";
-            objTitle.Evnt_Id = 2;
-            objLstTitle.Add(objTitle);
+            objDealer = new Cash_Bash_Dealer();
+            objDealer.FWS_DLR_NB = "37822";
+            objDealer.DLR_NM = "A&T Cheverolet";
+            objDealer.objDealerPull.Group_Nm = ""; 
+            objLstTitle.Add(objDealer);
 
-            objTitle = new Cash_Bash_Title();
-            objTitle.Atne_Title_CD = 2;
-            objTitle.Atne_Title_Desc = "CEO";
-            objTitle.Evnt_Id = 2;
-            objLstTitle.Add(objTitle);
+            objDealer = new Cash_Bash_Dealer();
+            objDealer.FWS_DLR_NB = "91491";
+            objDealer.DLR_NM = "ACCARDI DODGE";
+            objDealer.objDealerPull.Group_Nm = "";
+            objLstTitle.Add(objDealer);
 
-            objTitle = new Cash_Bash_Title();
-            objTitle.Atne_Title_CD = 2;
-            objTitle.Atne_Title_Desc = "CFO";
-            objTitle.Evnt_Id = 2;
-            objLstTitle.Add(objTitle);
+            ViewBag.PullOrder = objLstTitle;
 
-            objTitle = new Cash_Bash_Title();
-            objTitle.Atne_Title_CD = 2;
-            objTitle.Atne_Title_Desc = "COO";
-            objTitle.Evnt_Id = 2;
-            objLstTitle.Add(objTitle);
-
-            objTitle = new Cash_Bash_Title();
-            objTitle.Atne_Title_CD = 2;
-            objTitle.Atne_Title_Desc = "General Manager";
-            objTitle.Evnt_Id = 2;
-            objLstTitle.Add(objTitle);
-
-            objTitle = new Cash_Bash_Title();
-            objTitle.Atne_Title_CD = 2;
-            objTitle.Atne_Title_Desc = "F & I Director";
-            objTitle.Evnt_Id = 2;
-            objLstTitle.Add(objTitle);
-
-            objTitle = new Cash_Bash_Title();
-            objTitle.Atne_Title_CD = 2;
-            objTitle.Atne_Title_Desc = "Non - Affiliated";
-            objTitle.Evnt_Id = 2;
-            objLstTitle.Add(objTitle);
-
-
-            objTitle = new Cash_Bash_Title();
-            objTitle.Atne_Title_CD = 2;
-            objTitle.Atne_Title_Desc = "Business Manager";
-            objTitle.Evnt_Id = 2;
-            objLstTitle.Add(objTitle);
-
-            objTitle = new Cash_Bash_Title();
-            objTitle.Atne_Title_CD = 2;
-            objTitle.Atne_Title_Desc = "General Sales Manager";
-            objTitle.Evnt_Id = 2;
-            objLstTitle.Add(objTitle);
-
-
-            objTitle = new Cash_Bash_Title();
-            objTitle.Atne_Title_CD = 2;
-            objTitle.Atne_Title_Desc = "Sales Manager";
-            objTitle.Evnt_Id = 2;
-            objLstTitle.Add(objTitle);
-
-            objTitle = new Cash_Bash_Title();
-            objTitle.Atne_Title_CD = 2;
-            objTitle.Atne_Title_Desc = "Service Director";
-            objTitle.Evnt_Id = 2;
-            objLstTitle.Add(objTitle);
-
-            objTitle = new Cash_Bash_Title();
-            objTitle.Atne_Title_CD = 2;
-            objTitle.Atne_Title_Desc = "Sales Director";
-            objTitle.Evnt_Id = 2;
-            objLstTitle.Add(objTitle);
-
-            objTitle = new Cash_Bash_Title();
-            objTitle.Atne_Title_CD = 2;
-            objTitle.Atne_Title_Desc = "President";
-            objTitle.Evnt_Id = 2;
-            objLstTitle.Add(objTitle);
-
-            objTitle = new Cash_Bash_Title();
-            objTitle.Atne_Title_CD = 2;
-            objTitle.Atne_Title_Desc = "Vice Pres";
-            objTitle.Evnt_Id = 2;
-            objLstTitle.Add(objTitle);
-
-            objTitle = new Cash_Bash_Title();
-            objTitle.Atne_Title_CD = 2;
-            objTitle.Atne_Title_Desc = "Service Manager";
-            objTitle.Evnt_Id = 2;
-            objLstTitle.Add(objTitle);
-
-            ViewBag.ddlTitle = new SelectList(objLstTitle, "Atne_Title_CD", "Atne_Title_Desc", 0);
+            //ViewBag.PullOrder = new SelectList(objLstTitle, "FWS_DLR_NB", "DlrNM_GroupNm", 0);
 
         }
 
-
+        private void FillMenu()
+        {
+            ViewBag.controller = "DealerPullOrder";
+            ViewBag.v = SubMenu.RegistrationSubSectionMenu();
+        }
     }
 }

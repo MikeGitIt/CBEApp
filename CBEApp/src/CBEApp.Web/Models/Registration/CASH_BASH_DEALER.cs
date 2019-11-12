@@ -33,7 +33,34 @@ namespace CBEApp.Web.Models.Registration
         public string TERR_DSTT_NB { get; set; }
         public string FLD_REP_NM { get; set; }
         public string LAWSON_VENDOR_ID { get; set; }
-    
+         
+       
+         
+        public string DlrNM_GroupNm
+        {
+            get
+            { 
+
+                return DLR_NM+"("+ FWS_DLR_NB + ")"+ objDealerPull.Group_Nm;
+            } 
+        }
+
+        public Dealer_Pull _objDealerPull;
+        public Dealer_Pull objDealerPull
+        {
+            get
+            {
+                if (_objDealerPull == null)
+                    _objDealerPull = new Dealer_Pull();
+
+                return _objDealerPull;
+            }
+            set
+            {
+                _objDealerPull = value;
+            }
+        }
+
         //[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         //public virtual ICollection<CASH_BASH_DEALER_WINNER> CASH_BASH_DEALER_WINNER { get; set; }
         //[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]

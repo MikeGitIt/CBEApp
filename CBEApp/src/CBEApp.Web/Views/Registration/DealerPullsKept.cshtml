@@ -9,7 +9,7 @@
     <div class="row pageheading">
         <h6 class="formheading">Add Dealer Pulls Kept</h6>
     </div>
-    <form action="SaveDealerPullKept" method="post" class="inputform">
+    <form action="SaveDealerPullKept" method="post" class="inputform small">
         <div class="col-md-12">
             <div class="form-group row">                
                 <label class="col-xs-6" for="select">Please select a dealer:  Search / Dealer# :</label>
@@ -50,12 +50,12 @@
         </div>
         <div class="col-md-12">
             <div class="form-group row">
-                <div class="col-md-4"></div>
+                @*<div class="col-md-4"></div>*@
                 <label class="col-md-2 col-form-label" for="select">Lawson Vendor ID: </label>
                 <div class="col-md-2">
                     <input name="text" type="text" class="form-control">
                 </div>
-                <div class="col-md-4"></div>
+                <div class="col-md-8"></div>
             </div>
         </div>
         <hr>
@@ -97,16 +97,16 @@
         </div>
         <div class="col-md-12">
             <div class="form-group row">
-                <div class="col-md-3"></div>
+                @*<div class="col-md-3"></div>*@
                 <label class="col-md-1 col-form-label" for="select">Notes: </label>
                 <textarea name="notes" form="usrform" class="col-md-4"></textarea>
-                <div class="col-md-3"></div>
+                <div class="col-md-6"></div>
             </div>
         </div>
         <hr>
         <div class="col-md-12">
             <div class="form-group row">
-                <label class="col-form-label" for="select">Pulls: </label>
+                <label class="col-form-label" style="width:3%" for="select">Pulls: </label>
                 <div class="col-1">
                     <input name="text" type="text" class="form-control">
                 </div>
@@ -126,7 +126,7 @@
                         <input type="checkbox" value="">
                     </label>
                 </div>
-                <label class="col-form-label" for="select">Absentee/NoShow:</label>
+                <label class="col-form-label mr-3"  for="select">Absentee/NoShow:</label>
                 <div class="col-1">
                     <label class="checkbox-inline">
                         <input type="checkbox" value="">

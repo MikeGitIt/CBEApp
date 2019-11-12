@@ -4,7 +4,65 @@
     Layout = "~/Views/Shared/_MainLayout.cshtml";
 }
 
+    <style>
+        .dropbtn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 16px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+        }
 
+            .dropbtn:hover, .dropbtn:focus {
+                background-color: #3e8e41;
+            }
+
+        #myInput {
+            box-sizing: border-box;
+            background-image: url('searchicon.png');
+            background-position: 14px 12px;
+            background-repeat: no-repeat;
+            font-size: 16px;
+            padding: 14px 20px 12px 45px;
+            border: none;
+            border-bottom: 1px solid #ddd;
+        }
+
+            #myInput:focus {
+                outline: 3px solid #ddd;
+            }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f6f6f6;
+            min-width: 230px;
+            overflow: auto;
+            border: 1px solid #ddd;
+            z-index: 1;
+        }
+
+            .dropdown-content a {
+                color: black;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+            }
+
+        .dropdown a:hover {
+            background-color: #ddd;
+        }
+
+        .show {
+            display: block;
+        }
+    </style>
 <h4 class="text-center">@ViewBag.EventNm</h4>
 <h5 id="idh" class="text-primary">Dealer Pull Order</h5>
 @using (Html.BeginForm())
@@ -14,33 +72,46 @@
 
         @*<form id="configform" name="input" action="#" method="get">*@
         <div class="col form-control-sm h-auto" id="divMain">
+           
+           
             <div class="form-group row">
-                <div class="col-md-2">
+                <div class="col-md-4">
                     <label for="inputEmail">Please select Dealer: Dealer#:</label>
                     <span class="required">*</span>
                 </div>
-                <div class="col-md-2">
-                    @Html.TextBoxFor(x => x.Pull_Ordr_Nb, new { @class = "form-control", id = "txtAdd", @required = true, @maxlength = "30" })
+                <div class="dropdown">
+                    <button onclick="myFunction()" type="button" class="btn btn-primary dropdown-toggle">Please select Dealer  <span class="caret"></span></button>
+                    <div id="myDropdown" class="dropdown-content">
+                        <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+                        @foreach (var item in ViewBag.PullOrder)
+                        {
+                            <a href="#@item.DLR_NM">@item.DlrNM_GroupNm</a>
+
+                        }
+                    </div>
                 </div>
-                <div class="col-md-8">
-                    @Html.DropDownListFor(x => x.Pull_Ordr_Nb, ViewBag.PullOrder as SelectList, new { @class = "form-control", id = "ddlTitle" })
-                </div> 
-            </div> 
+                @*<div class="col-md-2">
+            @Html.TextBoxFor(x => x.Pull_Ordr_Nb, new { @class = "form-control", id = "txtAdd", @required = true, @maxlength = "30" })
+        </div>
+        <div class="col-md-8">
+           @Html.DropDownListFor(x => x.Pull_Ordr_Nb, ViewBag.PullOrder as SelectList, new { @class = "form-control", id = "ddlPullOrdrNb", onkeyup = "filterFunction()" })
+            </div>*@
+            </div>
             <div class="form-group row">
                 <div class="col-md-2">
                     <label for="inputEmail">Address:</label>
                     <span class="required">*</span>
                 </div>
                 <div class="col-md-2">
-                    @Html.Label("Address","")
+                    @Html.Label("Address", "")
                 </div>
                 <div class="col-md-2">
                     <label for="inputEmail">Field Rep:</label>
                 </div>
                 <div class="col-md-2">
-                    @Html.Label("FieldRep","")
+                    @Html.Label("FieldRep", "")
                 </div>
-                
+
             </div>
             <div class="form-group row">
                 <div class="col-md-2">
@@ -70,21 +141,21 @@
                     <span class="required">*</span>
                 </div>
                 <div class="col-md-2">
-                    @Html.TextBoxFor(x => x.Group_Nm, new { @class = "form-control", id = "txtWinner", @required = true, @maxlength = "11" })
+                    @*@Html.TextBoxFor(x => x.objDealerPull.Group_Nm, new { @class = "form-control", id = "txtWinner", @required = true, @maxlength = "30" })*@
                 </div>
                 <div class="col-md-2 ">
                     <label for="inputEmail">Stage Name:</label>
                     <span class="required">*</span>
                 </div>
                 <div class="col-md-2">
-                    @Html.TextBoxFor(x => x.Display_Nm, new { @class = "form-control ", id = "txtFName", @required = true, @maxlength = "25" })
+                    @Html.TextBoxFor(x => x.Display_Nm, new { @class = "form-control ", id = "txtFName", @required = true, @maxlength = "30" })
                 </div>
                 <div class="col-md-2">
                     <label for="inputEmail">Pull Order:</label>
                     <span class="required">*</span>
                 </div>
                 <div class="col-md-2">
-                    @Html.TextBoxFor(x => x.Pull_Ordr_Nb, new { @class = "form-control ", id = "txtPullNb", @required = true, @maxlength = "25" })
+                    @Html.TextBoxFor(x => x.Pull_Ordr_Nb, new { @class = "form-control ", id = "txtPullNb", @required = true, @maxlength = "4" })
                 </div>
             </div>
             <div> &nbsp; </div>
@@ -107,11 +178,21 @@
 
 <script>
 
-    $(document).ready(function () {
-        $("#txtArrDate").datepicker();
+    $(document).ready(function(){
+ 
+  // Initialize select2
+ // $("#ddlPullOrdrNb").select2();
 
-        $("#txtDepDate").datepicker();
+  // Read selected option
+  //$('#but_read').click(function(){
+  //  var username = $('#selUser option:selected').text();
+  //  var userid = $('#selUser').val();
+
+  //  $('#result').html("id : " + userid + ", name : " + username);
+
+  //});
     });
+     
     function validate() {
         return true;
     }
@@ -123,6 +204,24 @@
         $('#txtWinner')[0].value = winner;
         return false;
     }
+  function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
 
+function filterFunction() {
+  var input, filter, ul, li, a, i;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  div = document.getElementById("myDropdown");
+  a = div.getElementsByTagName("a");
+  for (i = 0; i < a.length; i++) {
+    txtValue = a[i].textContent || a[i].innerText;
+    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+      a[i].style.display = "";
+    } else {
+      a[i].style.display = "none";
+    }
+  }
+}
 
 </script>

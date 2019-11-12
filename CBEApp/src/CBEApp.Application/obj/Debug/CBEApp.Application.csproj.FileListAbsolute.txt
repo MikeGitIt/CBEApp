@@ -187,6 +187,3 @@ C:\Users\conceej\source\repos\CBEApp\CBEApp\CBEApp\src\CBEApp.Application\obj\De
 C:\Users\conceej\source\repos\CBEApp\CBEApp\CBEApp\src\CBEApp.Application\obj\Debug\CBEApp.Application.csproj.CopyComplete
 C:\Users\conceej\source\repos\CBEApp\CBEApp\CBEApp\src\CBEApp.Application\obj\Debug\CBEApp.Application.dll
 C:\Users\conceej\source\repos\CBEApp\CBEApp\CBEApp\src\CBEApp.Application\obj\Debug\CBEApp.Application.pdb
-C:\Users\conpynn\source\repos\CBEApp\CBEApp\src\CBEApp.Application\bin\Debug\Microsoft.Threading.Tasks.Extensions.dll
-C:\Users\conpynn\source\repos\CBEApp\CBEApp\src\CBEApp.Application\bin\Debug\Nito.AsyncEx.Tasks.xml
-C:\Users\conpynn\source\repos\CBEApp\CBEApp\src\CBEApp.Application\bin\Debug\Nito.Disposables.xml

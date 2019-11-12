@@ -13,12 +13,12 @@ namespace CBEApp.Web.Helpers
         {
             List<MenuList> lst = new List<MenuList>();
             MenuList men = new MenuList();
-            men.ActionName = "SearchUser";
+            men.ActionName = "Admin/SearchUser";
             men.Name = "Search User";
             lst.Add(men);
 
             men = new MenuList();
-            men.ActionName = "AddUser";
+            men.ActionName = "Admin/AddUser";
             men.Name = "Add User";
             lst.Add(men);
 
@@ -29,7 +29,7 @@ namespace CBEApp.Web.Helpers
             //lst.Add(men);
 
             men = new MenuList();
-            men.ActionName = "AddEditTitles";
+            men.ActionName = "Admin/AddEditTitles";
             men.Name = "Add/Edit Titles";
             lst.Add(men);
 
@@ -39,12 +39,12 @@ namespace CBEApp.Web.Helpers
             //lst.Add(men);
 
             men = new MenuList();
-            men.ActionName = "InitCash";
+            men.ActionName = "Admin/InitCash";
             men.Name = "Edit cash";
             lst.Add(men);
 
             return lst;
-           
+
         }
 
         public static List<MenuList> RegistrationSubSectionMenu()
@@ -56,26 +56,26 @@ namespace CBEApp.Web.Helpers
             //lst.Add(men);
 
             men = new MenuList();
-            men.ActionName = "Search";
+            men.ActionName = "Registration/Search";
             men.Name = "Search";
             lst.Add(men);
 
             men = new MenuList();
-            men.ActionName = "AddWinner";
+            men.ActionName = "Winner/AddWinner";
             men.Name = "Add Winner";
 
             lst.Add(men);
             men = new MenuList();
-            men.ActionName = "DealerPullsKept";
+            men.ActionName = "Registration/DealerPullsKept";
             men.Name = "Dealer Pull Kept";
             lst.Add(men);
 
             men = new MenuList();
-            men.ActionName = "DealerPullOrder";
+            men.ActionName = "DealerPullOrder/GetPullOrder";
             men.Name = "Dealer Pull Order";
             lst.Add(men);
             return lst;
-            
+
         }
     }
 }
